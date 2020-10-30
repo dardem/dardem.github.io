@@ -1,15 +1,11 @@
 ---
-title: "Paper Title Number 1"
+title: "Fake News Detection using Multilingual Evidence"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: 
+date: 2020-10-06
+venue: 'IEEE'
+paperurl: https://youtu.be/Cr4G4brRFsg
 ---
-This paper is about the number 1. The number 2 is left for future work.
+Nowadays, misleading information spreads over the internet at an incredible speed, which can lead to irreparable consequences. As a result, it is becoming more and more essential to combat fake news, especially in the early stages of its origins. Over the past years, a lot of work has been done in this direction. However, all existed solutions have their limitations. One of the main limitations of the current approaches is that the majority of the models are focused only on one language and do not use any multilingual information. In this work, we investigate the new approach of fake news detection based on multilingual evidence. We show effectiveness of the proposed approach in a manual and an automated evaluation experiments.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+[Paper presentation](https://youtu.be/Cr4G4brRFsg)
