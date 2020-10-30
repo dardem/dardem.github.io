@@ -1,5 +1,5 @@
 ---
-title: "ViTalk Virtual Analyst or Human Business Intelligence"
+title: "ViTalk: Virtual Analyst or Human Business Intelligence"
 collection: talks
 type: "Talk"
 permalink: https://www.youtube.com/watch?v=t_hfmVO0Xw0&t=318s
