@@ -11,17 +11,24 @@ redirect_from:
 
 Education
 ======
-<table border="0" width="100%">
-  <tr>
-    <td width="10%" align="left" valign="top"> 2019-2024 </td>
-    <td width="90%" align="left" valign="top"> 
-      <p> <b>PhD of Data Science</b>, <em>Skoltech University</em>, Computational and Data Science and Engineering Department. 
-      <br> <em>Topic</em>: Fake News Detection using Multilingual Evidence 
-      <br> <em>Adviser</em>: Prof. Alexander Panchenko
-      </p>
-    </td>
-  </tr>
-</table>
+**2019 — 2024** &nbsp;&nbsp;&nbsp; **PhD of Data Science**, <em>Skoltech University</em>, Computational and Data Science and Engineering Department.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Topic</em>: Fake News Detection using Multilingual Evidence
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Adviser</em>: Prof. Alexander Panchenko
+
+**2017 — 2019** &nbsp;&nbsp;&nbsp; **Master of Data Science**, <em>Moscow Institute of Physics and Technology</em>, Faculty of Applied Math and Physics, Department of Data Science.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Topic</em>: News aggregation and personalization for professional groups
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Adviser</em>: Prof. Konstantin Vorontsov
+
+**Additional Education**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2020** &nbsp;&nbsp;&nbsp; **The Machine Learning Summer School (MLSS)**, <em>Tübingen, Germany</em>.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Poster Presentation: <em>Fake News Detection using Multilingual Evidence</em>
 
 Work experience
 ======
@@ -50,7 +57,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Talks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
