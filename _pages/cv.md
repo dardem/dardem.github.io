@@ -30,34 +30,25 @@ Education
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Poster Presentation: <em>Fake News Detection using Multilingual Evidence</em>
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Work experience
+======
+**2017 — 2019** &nbsp;&nbsp;&nbsp; **Data Scientist**, <em>Visiology</em>, Moscow, Russia.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Natural Language Assistant for BI Platform</em>: Designing modules for dialogue system including creating new approaches for Russian language’s specific tasks.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Prompter for the operator on Sibur Neftekhim</em>: Building machine learning models for analysis of production data, e.g. predicting time series with neural networks.
+
+**Jun–Sep 2018** &nbsp; **Data Science Intern**, <em>Beiersdorf</em>, Hamburg, Germany.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Natural Language Model for Trends Exploration</em>: Working on models for automatic trends extraction from texts from social networks, e.g. Instagram, Medium.
   
-Talks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
@@ -68,3 +59,18 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+  
+Business Case Championships
+======
+**May 2018** &nbsp;&nbsp;&nbsp; **P&G IT Business Challenge**, <em>Athens, Greece</em>, One of three representatives of Russia at the international championship.
+
+**Apr 2017** &nbsp;&nbsp;&nbsp; **Management of the Future**, <em>Saint-Petersburg, Russia</em>, First place: development of a prototype of the system for contactless payment by the user’s fingerprint for VTB Bank.
+
+Skills
+======
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
