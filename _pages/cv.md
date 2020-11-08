@@ -13,8 +13,8 @@ Education
 ======
 <table border="0" width="100%">
   <tr>
-    <td width="10%" align="left"> 2019-2024 </td>
-    <td width="90%" align="left"> 
+    <td width="10%" align="left" valign="top"> 2019-2024 </td>
+    <td width="90%" align="left" valign="top"> 
       <p> <b>PhD of Data Science</b>, <em>Skoltech University</em>, Computational and Data Science and Engineering Department. 
       <br> <em>Topic</em>: Fake News Detection using Multilingual Evidence 
       <br> <em>Adviser</em>: Prof. Alexander Panchenko
