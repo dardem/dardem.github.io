@@ -39,14 +39,11 @@ Publications
 Work experience
 ======
 **2017 — 2019** &nbsp;&nbsp;&nbsp; **Data Scientist**, <em>Visiology</em>, Moscow, Russia.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Natural Language Assistant for BI Platform</em>: Designing modules for dialogue system including creating new approaches for Russian language’s specific tasks.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Prompter for the operator on Sibur Neftekhim</em>: Building machine learning models for analysis of production data, e.g. predicting time series with neural networks.
+* <em>Natural Language Assistant for BI Platform</em>: Designing modules for dialogue system including creating new approaches for Russian language’s specific tasks.
+* <em>Prompter for the operator on Sibur Neftekhim</em>: Building machine learning models for analysis of production data, e.g. predicting time series with neural networks.
 
 **Jun–Sep 2018** &nbsp; **Data Science Intern**, <em>Beiersdorf</em>, Hamburg, Germany.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Natural Language Model for Trends Exploration</em>: Working on models for automatic trends extraction from texts from social networks, e.g. Instagram, Medium.
+* <em>Natural Language Model for Trends Exploration</em>: Working on models for automatic trends extraction from texts from social networks, e.g. Instagram, Medium.
   
 Talks
 ======
