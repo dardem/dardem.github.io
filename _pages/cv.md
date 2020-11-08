@@ -11,11 +11,15 @@ redirect_from:
 
 Education
 ======
-<table>
+<table border="0" width="100%">
   <tr>
-    <th> 2019-2024 </th>
-    <th> <p> PhD of Data Science, Skoltech University, Computational and Data Science and Engineering Department. \n <em>Topic</em>: Fake News Detection using Multilingual Evidence \n <em>Adviser</em>: Prof. Alexander Panchenko</p>
-    </th>
+    <td width="10%" align="left"> 2019-2024 </td>
+    <td width="90%" align="left"> 
+      <p> <b>PhD of Data Science</b>, <em>Skoltech University</em>, Computational and Data Science and Engineering Department. 
+      <br> <em>Topic</em>: Fake News Detection using Multilingual Evidence 
+      <br> <em>Adviser</em>: Prof. Alexander Panchenko
+      </p>
+    </td>
   </tr>
 </table>
 
