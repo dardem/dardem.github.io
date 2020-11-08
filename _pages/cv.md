@@ -68,9 +68,23 @@ Business Case Championships
 
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**Programming Languages**
+
+* **Experienced**: Python
+* **Comfortable**: C, C++, Java
+
+**Tools**
+
+* **ML**: libraries sklearn, pytorch, Keras, Catboost
+* **Analysis**: pandas, numpy, scipy
+* **NLP**: NLTK, UDPipe, Faiss, fasttext, huggingface, BigARTM
+* **Visualization**: matplotlib, plotly, Grafana
+* **Data bases**: PostreSQL
+* **VC**: Git
+
+Languages
+======
+* **Russian**: Native
+* **Ukrainian**: Native
+* **English**: Advanced
+* **German**: Intermediate
