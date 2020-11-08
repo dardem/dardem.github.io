@@ -1,5 +1,5 @@
 ---
-title: "WIFI Single Access Point Positioning"
+title: "Aggregation and personalization of news text content"
 venue: Master Thesis
 date: 2019-07-01
 collection: portfolio
