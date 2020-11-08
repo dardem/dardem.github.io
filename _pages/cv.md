@@ -12,16 +12,12 @@ redirect_from:
 Education
 ======
 **2019 — 2024** &nbsp;&nbsp;&nbsp; **PhD of Data Science**, <em>Skoltech University</em>, Computational and Data Science and Engineering Department.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Topic</em>: Fake News Detection using Multilingual Evidence
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Adviser</em>: Prof. Alexander Panchenko
+* <em>Topic</em>: Fake News Detection using Multilingual Evidence
+* <em>Adviser</em>: Prof. Alexander Panchenko
 
 **2017 — 2019** &nbsp;&nbsp;&nbsp; **Master of Data Science**, <em>Moscow Institute of Physics and Technology</em>, Faculty of Applied Math and Physics, Department of Data Science.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Topic</em>: News aggregation and personalization for professional groups
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <em>Adviser</em>: Prof. Konstantin Vorontsov
+* <em>Topic</em>: News aggregation and personalization for professional groups
+* <em>Adviser</em>: Prof. Konstantin Vorontsov
 
 **Additional Education**
 
