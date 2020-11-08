@@ -8,4 +8,5 @@ The majority of WiFi positioning methods use several access points to estimate u
 <table style="width:100%">
 <tr style="width:50%"><img src='/images/WIFI-example1.png'></tr>
 <tr style="width:50%"><img src='/images/WIFI-example2.png'></tr>
+<tr> Table. Examples of our appoache results inside the real-life building with only one WIFI access point. <\tr>
 </table>
