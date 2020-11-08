@@ -22,9 +22,7 @@ Education
 **Additional Education**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**2020** &nbsp;&nbsp;&nbsp; **The Machine Learning Summer School (MLSS)**, <em>Tübingen, Germany</em>.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Poster Presentation: <em>Fake News Detection using Multilingual Evidence</em>
+* Poster Presentation: <em>Fake News Detection using Multilingual Evidence</em>
 
 Publications
 ======
