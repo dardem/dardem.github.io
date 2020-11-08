@@ -2,7 +2,7 @@
 title: "DSAA Poster: Fake News Detection Using Multilingual Evidence"
 collection: talks
 type: "Talk"
-permalink: https://youtu.be/Cr4G4brRFsg
+link: https://youtu.be/Cr4G4brRFsg
 venue: "The 7th IEEE International Conference on Data Science and Advanced Analytics"
 date: 2020-10-06
 location: "Sydney, Australia"
