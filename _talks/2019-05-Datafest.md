@@ -2,7 +2,7 @@
 title: "ViTalk: Virtual Analyst or Human Business Intelligence"
 collection: talks
 type: "Talk"
-permalink: https://www.youtube.com/watch?v=t_hfmVO0Xw0&t=318s
+link: https://www.youtube.com/watch?v=t_hfmVO0Xw0&t=318s
 venue: "DataFest 2019"
 date: 2019-05-10
 location: "Moscow, Russian Federation"
