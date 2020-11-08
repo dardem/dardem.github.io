@@ -11,9 +11,13 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+<table>
+  <tr>
+    <th> 2019-2024 </th>
+    <th> <p> PhD of Data Science, Skoltech University, Computational and Data Science and Engineering Department. \n <em>Topic</em>: Fake News Detection using Multilingual Evidence \n <em>Adviser</em>: Prof. Alexander Panchenko</p>
+    </th>
+  </tr>
+</table>
 
 Work experience
 ======
@@ -53,7 +57,3 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
