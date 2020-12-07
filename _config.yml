@@ -86,7 +86,7 @@ author:
   location         : "Moscow"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=mLX6olgAAAAJ&hl=ru&oi=ao"
   email            : "Daryna.Dementieva@skoltech.ru"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
