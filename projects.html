@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Daryna Dementieva</title>
+  <meta name="description" content="Research projects by Daryna Dementieva." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <script src="assets/js/nav.js"></script>
+
+  <main class="container page-content">
+    <header class="page-header">
+      <h1>Projects</h1>
+      <p>Research projects, tools, and datasets</p>
+    </header>
+
+    <div class="projects-grid">
+
+      <!-- ══════════════════════════════════
+           PROJECT CARD TEMPLATE
+           Duplicate this block to add more projects.
+           ══════════════════════════════════ -->
+
+      <article class="project-card">
+        <!-- Image: save your image as assets/images/project-detox.jpg
+             Replace the placeholder div with:
+             <div class="project-card__img"><img src="assets/images/project-detox.jpg" alt="TextDetox" /></div>
+        -->
+        <div class="project-card__img-placeholder">🧹</div>
+        <div class="project-card__body">
+          <h3>TextDetox — Multilingual Text Detoxification</h3>
+          <p>
+            A shared task and dataset for parallel text detoxification spanning 9 languages
+            including German, Chinese, Arabic, Hindi, and Amharic. Includes the PAN 2024
+            multilingual detoxification challenge and Chain-of-Thought–inspired prompting methods.
+          </p>
+          <div class="project-card__links">
+            <a href="https://github.com/s-nlp/paradetox" target="_blank" rel="noopener" class="project-link">
+              <!-- GitHub icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <!-- Add HuggingFace / other links:
+            <a href="https://huggingface.co/datasets/..." target="_blank" class="project-link">
+              🤗 HuggingFace
+            </a>
+            -->
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__img-placeholder">📰</div>
+        <div class="project-card__body">
+          <h3>Cross-lingual Fake News Detection</h3>
+          <p>
+            A system leveraging multilingual evidence to improve fake news detection.
+            The key insight: true news is repeated with consistent facts across languages,
+            while misinformation diverges. Developed with a focus on the Russian invasion of Ukraine.
+          </p>
+          <div class="project-card__links">
+            <a href="https://aclanthology.org/2021.acl-srw.38/" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              Paper
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__img-placeholder">😤</div>
+        <div class="project-card__body">
+          <h3>HatePRISM — Hate Speech Proactive Mitigation</h3>
+          <p>
+            A comprehensive framework examining hate speech regulations across countries, social
+            platform policies, and NLP research datasets. Reveals inconsistencies in hate speech
+            definitions and proposes unified research directions.
+          </p>
+          <div class="project-card__links">
+            <a href="https://aclanthology.org/2025.findings-acl.824/" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              Paper
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__img-placeholder">🌍</div>
+        <div class="project-card__body">
+          <h3>Low-Resource NLP Tutorial</h3>
+          <p>
+            A hands-on tutorial designed for NLP practitioners working with multilingual and
+            low-resource languages. Covers end-to-end pipelines for building equitable and
+            socially impactful language technologies.
+          </p>
+          <div class="project-card__links">
+            <a href="https://tum-nlp.github.io/low-resource-tutorial" target="_blank" rel="noopener" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              Website
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!--
+        ADD MORE PROJECTS HERE — copy the template above:
+
+        <article class="project-card">
+          <div class="project-card__img-placeholder">🔬</div>
+          <div class="project-card__body">
+            <h3>Your Project Title</h3>
+            <p>Short description of the project.</p>
+            <div class="project-card__links">
+              <a href="YOUR_URL" target="_blank" class="project-link">GitHub</a>
+              <a href="YOUR_URL" target="_blank" class="project-link">🤗 Dataset</a>
+            </div>
+          </div>
+        </article>
+      -->
+
+    </div>
+  </main>
+
+</body>
+</html>

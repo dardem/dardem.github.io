@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papers — Daryna Dementieva</title>
+  <meta name="description" content="Publications by Daryna Dementieva." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <script src="assets/js/nav.js"></script>
+
+  <main class="container page-content">
+    <header class="page-header">
+      <h1>Papers</h1>
+      <p>Selected publications — filter by topic below</p>
+    </header>
+
+    <!-- ── Tag Filters ── -->
+    <div class="papers-filters" id="filtersContainer">
+      <span class="papers-filters__label">Filter:</span>
+      <!-- Tags are injected by JS below -->
+    </div>
+
+    <!-- ── Papers List ── -->
+    <div class="papers-list" id="papersList">
+      <!--
+        Each paper-card has data-tags="tag1,tag2,tag3" for filtering.
+        Papers sorted by year (newest first), then alphabetically within year.
+
+        Available tags used below:
+          multilingual | text-detoxification | hate-speech | fake-news |
+          text-style-transfer | explainability | emotion-recognition |
+          low-resource | formality | llm | survey
+      -->
+
+      <!-- ══════ 2025 ══════ -->
+
+      <article class="paper-card" data-tags="multilingual,emotion-recognition,low-resource">
+        <div class="paper-card__year">ACL 2025</div>
+        <h3><a href="https://aclanthology.org/2025.acl-long.436/" target="_blank" rel="noopener">
+          BRIGHTER: BRIdging the Gap in Human-Annotated Textual Emotion Recognition Datasets for 28 Languages
+        </a></h3>
+        <div class="paper-card__venue">
+          Shamsuddeen Hassan Muhammad, Nedjma Ousidhoum, …, Daryna Dementieva, …, Saif M. Mohammad.
+          <em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</em>
+        </div>
+        <p class="paper-card__abstract">
+          Multi-labeled, emotion-annotated datasets across 28 languages, primarily covering low-resource
+          languages from Africa, Asia, Eastern Europe, and Latin America. Highlights challenges in
+          cross-lingual emotion recognition and benchmarks LLM-based approaches.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">emotion-recognition</span>
+          <span class="paper-tag">low-resource</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="multilingual,text-detoxification,explainability,low-resource">
+        <div class="paper-card__year">COLING 2025</div>
+        <h3><a href="https://aclanthology.org/2025.coling-main.535/" target="_blank" rel="noopener">
+          Multilingual and Explainable Text Detoxification with Parallel Corpora
+        </a></h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Nikolay Babakov, et al.
+          <em>Proceedings of the 31st International Conference on Computational Linguistics</em>
+        </div>
+        <p class="paper-card__abstract">
+          Extends parallel text detoxification corpora to German, Chinese, Arabic, Hindi, and Amharic.
+          Conducts the first automated, explainable analysis of toxic vs. non-toxic sentence features
+          across 9 languages, and introduces a Chain-of-Thought–inspired detoxification method.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">explainability</span>
+          <span class="paper-tag">low-resource</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="multilingual,text-style-transfer,low-resource">
+        <div class="paper-card__year">COLING 2025</div>
+        <h3><a href="https://aclanthology.org/2025.coling-main.97/" target="_blank" rel="noopener">
+          Cross-lingual Text Classification Transfer: The Case of Ukrainian
+        </a></h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Valeriia Khylenko, Georg Groh.
+          <em>Proceedings of the 31st International Conference on Computational Linguistics</em>
+        </div>
+        <p class="paper-card__abstract">
+          Explores cross-lingual knowledge transfer methods for Ukrainian NLP — covering toxicity,
+          formality classification, and NLI — using multilingual encoders, translation systems,
+          LLMs, and language adapters without manual data curation.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">text-style-transfer</span>
+          <span class="paper-tag">low-resource</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="multilingual,hate-speech,low-resource">
+        <div class="paper-card__year">EMNLP 2025</div>
+        <h3><a href="https://aclanthology.org/2025.emnlp-main.1507/" target="_blank" rel="noopener">
+          Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data
+        </a></h3>
+        <div class="paper-card__venue">
+          Faeze Ghorbanpour, Daryna Dementieva, Alexander Fraser.
+          <em>Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing</em>
+        </div>
+        <p class="paper-card__abstract">
+          A scalable cross-lingual hate speech detection approach using nearest-neighbor retrieval
+          to augment minimal labeled target-language data. Evaluated on 8 languages, consistently
+          outperforming state-of-the-art with as few as 200 retrieved instances.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">low-resource</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="hate-speech,survey,multilingual">
+        <div class="paper-card__year">ACL Findings 2025</div>
+        <h3><a href="https://aclanthology.org/2025.findings-acl.824/" target="_blank" rel="noopener">
+          HatePRISM: Policies, Platforms, and Research Integration. Advancing NLP for Hate Speech Proactive Mitigation
+        </a></h3>
+        <div class="paper-card__venue">
+          Naquee Rizwan, Seid Muhie Yimam, Daryna Dementieva, et al.
+          <em>Findings of the Association for Computational Linguistics: ACL 2025</em>
+        </div>
+        <p class="paper-card__abstract">
+          Comprehensive examination of hate speech regulations and strategies from three angles:
+          country regulations, social platform policies, and NLP research datasets. Reveals
+          inconsistencies and proposes research directions for unified mitigation frameworks.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">survey</span>
+          <span class="paper-tag">multilingual</span>
+        </div>
+      </article>
+
+      <!-- ══════ 2024 ══════ -->
+
+      <article class="paper-card" data-tags="multilingual,text-detoxification,text-style-transfer">
+        <div class="paper-card__year">CLEF / PAN 2024</div>
+        <h3>
+          Overview of the Multilingual Text Detoxification Task at PAN 2024
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Daniil Moskovskiy, Nikolay Babakov, et al.
+          <em>Working Notes of CLEF 2024</em>
+        </div>
+        <p class="paper-card__abstract">
+          Shared task overview for multilingual text detoxification. Presents the task setup,
+          parallel corpora, evaluation protocol, and analysis of participating system submissions
+          across multiple languages.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">text-style-transfer</span>
+        </div>
+      </article>
+
+      <!-- ══════ 2023 ══════ -->
+
+      <article class="paper-card" data-tags="fake-news,multilingual,explainability">
+        <div class="paper-card__year">Journal of Imaging 2023</div>
+        <h3>
+          Fake News Detection via Image–Text Consistency
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, M. Kuimov, Alexander Panchenko.
+          <em>Journal of Imaging, MDPI</em>
+        </div>
+        <p class="paper-card__abstract">
+          Explores the detection of deceptive information on the internet using image–text consistency
+          analysis, addressing the rapid spread of fake news and its severe consequences.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">fake-news</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">explainability</span>
+        </div>
+      </article>
+
+      <!-- ══════ 2023 — Workshop ══════ -->
+
+      <article class="paper-card" data-tags="fake-news,multilingual,llm">
+        <div class="paper-card__year">NLP4PI Workshop 2023</div>
+        <h3>
+          <a href="https://aclanthology.org/2023.nlp4pi-1.2/" target="_blank" rel="noopener">
+          Crafting Tomorrow's Headlines: Neural News Generation and Detection in English, Turkish, Hungarian, and Persian
+          </a>
+        </h3>
+        <div class="paper-card__venue">
+          Cem Üyük, Danica Rovó, …, Georg Groh, Daryna Dementieva.
+          <em>Proceedings of the Third Workshop on NLP for Positive Impact</em>
+        </div>
+        <p class="paper-card__abstract">
+          Benchmark dataset for neural news detection across four languages using multilingual generators
+          (BloomZ, LLaMa-2, Mistral, Mixtral, GPT-4). Studies interpretability and robustness of
+          machine-generated text detectors.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">fake-news</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">llm</span>
+        </div>
+      </article>
+
+      <!-- ══════ 2023 — RANLP ══════ -->
+
+      <article class="paper-card" data-tags="formality,text-style-transfer,multilingual">
+        <div class="paper-card__year">RANLP 2023</div>
+        <h3>
+          <a href="https://aclanthology.org/2023.ranlp-1.31/" target="_blank" rel="noopener">
+          Detecting Text Formality: A Study of Text Classification Approaches
+          </a>
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Nikolay Babakov, Alexander Panchenko.
+          <em>Proceedings of the 14th International Conference on Recent Advances in NLP (RANLP 2023)</em>
+        </div>
+        <p class="paper-card__abstract">
+          First systematic study of formality detection methods using statistical, neural, and
+          Transformer-based approaches. Evaluated on GYAFC and X-FORMAL datasets across multiple languages,
+          delivering best-performing public models.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">formality</span>
+          <span class="paper-tag">text-style-transfer</span>
+          <span class="paper-tag">multilingual</span>
+        </div>
+      </article>
+
+      <!-- ══════ 2022 ══════ -->
+
+      <article class="paper-card" data-tags="text-detoxification,multilingual,low-resource">
+        <div class="paper-card__year">ACL 2022</div>
+        <h3>
+          <a href="https://aclanthology.org/2022.acl-long.469/" target="_blank" rel="noopener">
+          ParaDetox: Detoxification with Parallel Data
+          </a>
+        </h3>
+        <div class="paper-card__venue">
+          Varvara Logacheva*, Daryna Dementieva* (equal contribution), et al.
+          <em>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1)</em>
+        </div>
+        <p class="paper-card__abstract">
+          Introduces a novel pipeline for collecting parallel data for text detoxification. Presents
+          over 10,000 non-toxic English paraphrases, demonstrating state-of-the-art results for
+          seq2seq detoxification models.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">low-resource</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="text-detoxification,multilingual,llm">
+        <div class="paper-card__year">ACL-SRW 2022</div>
+        <h3>
+          <a href="https://aclanthology.org/2022.acl-srw.26/" target="_blank" rel="noopener">
+          Exploring Cross-lingual Text Detoxification with Large Multilingual Language Models
+          </a>
+        </h3>
+        <div class="paper-card__venue">
+          Daniil Moskovskiy, Daryna Dementieva, Alexander Panchenko.
+          <em>Proceedings of the 60th ACL: Student Research Workshop</em>
+        </div>
+        <p class="paper-card__abstract">
+          Investigates multilingual LLMs for cross-lingual text detoxification, exploring whether
+          knowledge from high-resource languages can improve detoxification quality in low-resource settings.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">llm</span>
+        </div>
+      </article>
+
+      <!-- ══════ 2021 ══════ -->
+
+      <article class="paper-card" data-tags="fake-news,multilingual">
+        <div class="paper-card__year">ACL-SRW 2021</div>
+        <h3>
+          <a href="https://aclanthology.org/2021.acl-srw.38/" target="_blank" rel="noopener">
+          Cross-lingual Evidence Improves Monolingual Fake News Detection
+          </a>
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Alexander Panchenko.
+          <em>Proceedings of the 59th ACL and IJCNLP: Student Research Workshop</em>
+        </div>
+        <p class="paper-card__abstract">
+          Demonstrates that cross-lingual evidence significantly improves monolingual fake news
+          detection. True news repeats consistent facts across languages while misinformation diverges,
+          providing a cross-lingual signal for verification.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">fake-news</span>
+          <span class="paper-tag">multilingual</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="text-detoxification,multilingual,text-style-transfer">
+        <div class="paper-card__year">MTI 2021</div>
+        <h3>
+          Methods for Detoxification of Texts for the Russian Language
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Daniil Moskovskiy, Varvara Logacheva, David Dale, et al.
+          <em>Multimodal Technologies and Interaction, 5(9), MDPI</em>
+        </div>
+        <p class="paper-card__abstract">
+          Introduces text detoxification methods for Russian, a morphologically rich language with
+          limited resources. Presents evaluation benchmarks and baseline models for Russian-language
+          detoxification.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">text-style-transfer</span>
+        </div>
+      </article>
+
+    </div><!-- /papers-list -->
+  </main>
+
+  <script>
+    // ── Tag Filtering ──────────────────────────────────────────
+    (function () {
+      const cards = Array.from(document.querySelectorAll('.paper-card'));
+      const container = document.getElementById('filtersContainer');
+
+      // Collect all unique tags
+      const tagSet = new Set();
+      cards.forEach(c => c.dataset.tags.split(',').forEach(t => tagSet.add(t.trim())));
+      const tags = Array.from(tagSet).sort();
+
+      let activeTag = null;
+
+      // Render filter buttons
+      tags.forEach(tag => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-tag';
+        btn.textContent = tag;
+        btn.dataset.tag = tag;
+        btn.addEventListener('click', () => toggle(tag, btn));
+        container.appendChild(btn);
+      });
+
+      function toggle(tag, btn) {
+        if (activeTag === tag) {
+          // Clear filter
+          activeTag = null;
+          document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
+          cards.forEach(c => c.classList.remove('hidden'));
+        } else {
+          activeTag = tag;
+          document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          cards.forEach(c => {
+            const tags = c.dataset.tags.split(',').map(t => t.trim());
+            c.classList.toggle('hidden', !tags.includes(tag));
+          });
+        }
+      }
+    })();
+  </script>
+
+</body>
+</html>
