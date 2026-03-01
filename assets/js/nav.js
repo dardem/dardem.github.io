@@ -24,12 +24,6 @@
   </div>
 </nav>`;
 
-  const footerHTML = `
-<footer class="footer">
-  <div class="container">
-    © <span>${new Date().getFullYear()}</span> Daryna Dementieva &mdash; Built with care &amp; HTML
-  </div>
-</footer>`;
 
   document.body.insertAdjacentHTML('afterbegin', navHTML);
   document.body.insertAdjacentHTML('beforeend', footerHTML);
