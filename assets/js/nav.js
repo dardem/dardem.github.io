@@ -6,6 +6,7 @@
     { href: 'index.html',    label: 'Home' },
     { href: 'bio.html',      label: 'Bio' },
     { href: 'projects.html', label: 'Projects' },
+    { href: 'talks.html',    label: 'Talks and Interviews' },
     { href: 'papers.html',   label: 'Papers' },
     { href: 'teaching.html', label: 'Teaching' },
     { href: 'interests.html',label: 'Interests' },
@@ -14,7 +15,7 @@
   const navHTML = `
 <nav class="nav">
   <div class="nav__inner">
-    <a href="index.html" class="nav__brand">Daryna Dementieva</a>
+    <a href="index.html" class="nav__brand">Dr. Daryna Dementieva</a>
     <ul class="nav__links" id="navLinks">
       ${pages.map(p => `<li><a href="${p.href}" class="${currentPage === p.href ? 'active' : ''}">${p.label}</a></li>`).join('')}
     </ul>
