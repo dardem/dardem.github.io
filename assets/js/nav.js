@@ -9,6 +9,7 @@
     { href: 'talks.html',    label: 'Talks and Interviews' },
     { href: 'papers.html',   label: 'Papers' },
     { href: 'teaching.html', label: 'Teaching' },
+    { href: 'third_mission.html', label: 'Third Mission' },
     { href: 'interests.html',label: 'Interests' },
   ];
 
