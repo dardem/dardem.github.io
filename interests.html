@@ -3,6 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3x3 Image Grid</title>
+    <style>
+        /* This is the container holding all the images */
+        .image-grid {
+            display: grid;
+            /* Creates 3 columns of equal width */
+            grid-template-columns: repeat(3, 1fr);
+            /* Adds a 10px gap between the images */
+            gap: 10px; 
+            /* Optional: limits the maximum width of the whole grid */
+            max-width: 900px;
+            margin: 0 auto; /* Centers the grid on the page */
+        }
+
+        /* This styles the images inside the grid */
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            /* Forces images to be perfect squares without stretching */
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border-radius: 8px; /* Optional: slightly rounded corners */
+        }
+    </style>
   <title>Interests — Daryna Dementieva</title>
   <meta name="description" content="Personal interests of Daryna Dementieva." />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -44,6 +68,18 @@
         I also heavily like exploring new countries, cultures, and cuisines. <br>
         <b>Countries visited (<i>status on March, 2026</i>):</b> 31.
       </p>
+
+      <div class="image-grid">
+        <img src="https://via.placeholder.com/300/FFB6C1/000000?text=1" alt="Image 1">
+        <img src="https://via.placeholder.com/300/87CEFA/000000?text=2" alt="Image 2">
+        <img src="https://via.placeholder.com/300/98FB98/000000?text=3" alt="Image 3">
+        <img src="https://via.placeholder.com/300/FFD700/000000?text=4" alt="Image 4">
+        <img src="https://via.placeholder.com/300/FFA07A/000000?text=5" alt="Image 5">
+        <img src="https://via.placeholder.com/300/DDA0DD/000000?text=6" alt="Image 6">
+        <img src="https://via.placeholder.com/300/20B2AA/000000?text=7" alt="Image 7">
+        <img src="https://via.placeholder.com/300/F08080/000000?text=8" alt="Image 8">
+        <img src="https://via.placeholder.com/300/E6E6FA/000000?text=9" alt="Image 9">
+    </div>
 
       <!--
       <h2>[Interest Area 1 — e.g., Languages]</h2>
