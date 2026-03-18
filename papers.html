@@ -13,7 +13,7 @@
   <main class="container page-content">
     <header class="page-header">
       <h1>Papers</h1>
-      <p>Selected publications — filter by topic below</p>
+      <p>[<a href="https://scholar.google.com/citations?user=mLX6olgAAAAJ&hl=en">Google Scholar</a>]</p>
     </header>
 
     <!-- ── Tag Filters ── -->
@@ -35,7 +35,6 @@
       -->
 
       <!-- ══════ 2025 ══════ -->
-
       <article class="paper-card" data-tags="multilingual,emotion-recognition,low-resource">
         <div class="paper-card__year">ACL 2025</div>
         <h3><a href="https://aclanthology.org/2025.acl-long.436/" target="_blank" rel="noopener">
@@ -48,12 +47,75 @@
         <p class="paper-card__abstract">
           Multi-labeled, emotion-annotated datasets across 28 languages, primarily covering low-resource
           languages from Africa, Asia, Eastern Europe, and Latin America. Highlights challenges in
-          cross-lingual emotion recognition and benchmarks LLM-based approaches.
+          cross-lingual emotion recognition and benchmarks LLM-based approaches. ACL Best Resource Paper 🏆
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">multilingual</span>
           <span class="paper-tag">emotion-recognition</span>
+          <span class="paper-tag">🏆</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="multilingual,emotion-recognition,low-resource">
+        <div class="paper-card__year">WMT@EMNLP 2025</div>
+        <h3><a href="https://aclanthology.org/2025.acl-long.436/" target="_blank" rel="noopener">
+          Findings of the WMT 2025 Shared Task LLMs with Limited Resources for Slavic Languages: MT and QA
+        </a></h3>
+        <div class="paper-card__venue">
+          Shu Okabe, Daryna Dementieva, Marion Weller-Di Marco, Lukas Edman, Katharina Haemmerl, Marko Měškank, Anita Hendrichowa, Alexander Fraser
+          <em>Proceedings of the Tenth Conference on Machine Translation</em>
+        </div>
+        <p class="paper-card__abstract">
+          We present the findings of the WMT 2025 Shared Task LLMs with Limited Resources for Slavic Languages. 
+          This shared task focuses on training LLMs using limited data and compute resources for three Slavic languages: Upper Sorbian (hsb), Lower Sorbian (dsb), and Ukrainian (uk). 
+          We consider two tasks which are to be evaluated jointly: Machine Translation (MT) and Multiple-Choice Question Answering (QA).
+        </p>
+        <div class="paper-card__tags">
           <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">ukrainian</span>
+          <span class="paper-tag">shared-task</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="multilingual,emotion-recognition,low-resource">
+        <div class="paper-card__year">EMNLP 2025</div>
+        <h3><a href="https://aclanthology.org/2025.acl-long.436/" target="_blank" rel="noopener">
+          EmoBench‑UA: A Benchmark Dataset for Emotion Detection in Ukrainian
+        </a></h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Nikolay Babakov, Alexander Fraser
+          <em>Findings of the Association for Computational Linguistics: EMNLP 2025</em>
+        </div>
+        <p class="paper-card__abstract">
+          In this work, we introduce EMOBENCH-UA, the first of its kind annotated dataset for emotion detection in Ukrainian texts.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">ukrainian</span>
+          <span class="paper-tag">classification</span>
+          <span class="paper-tag">emotion-recognition</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="multilingual,emotion-recognition,low-resource">
+        <div class="paper-card__year">EMNLP 2025</div>
+        <h3><a href="https://aclanthology.org/2025.acl-long.436/" target="_blank" rel="noopener">
+          Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data
+        </a></h3>
+        <div class="paper-card__venue">
+          Faeze Ghorbanpour, Daryna Dementieva, Alexander Fraser
+          <em>Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing</em>
+        </div>
+        <p class="paper-card__abstract">
+          This paper tackles hate speech detection in low-resource languages by combining cross-lingual transfer learning with nearest-neighbor retrieval. 
+          Starting from a small set of labeled examples in the target language, the method retrieves the most relevant examples from a large multilingual pool to augment training data. 
+          Tested across eight languages, the approach consistently outperforms models trained on target-language data alone, often beats the current state-of-the-art, and remains highly efficient — 
+          sometimes needing as few as 200 retrieved instances — while being easy to scale and adapt to new languages.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">multilingual</span>
         </div>
       </article>
 
@@ -95,29 +157,8 @@
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">multilingual</span>
-          <span class="paper-tag">text-style-transfer</span>
           <span class="paper-tag">low-resource</span>
-        </div>
-      </article>
-
-      <article class="paper-card" data-tags="multilingual,hate-speech,low-resource">
-        <div class="paper-card__year">EMNLP 2025</div>
-        <h3><a href="https://aclanthology.org/2025.emnlp-main.1507/" target="_blank" rel="noopener">
-          Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data
-        </a></h3>
-        <div class="paper-card__venue">
-          Faeze Ghorbanpour, Daryna Dementieva, Alexander Fraser.
-          <em>Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing</em>
-        </div>
-        <p class="paper-card__abstract">
-          A scalable cross-lingual hate speech detection approach using nearest-neighbor retrieval
-          to augment minimal labeled target-language data. Evaluated on 8 languages, consistently
-          outperforming state-of-the-art with as few as 200 retrieved instances.
-        </p>
-        <div class="paper-card__tags">
-          <span class="paper-tag">multilingual</span>
-          <span class="paper-tag">hate-speech</span>
-          <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">ukrainian</span>
         </div>
       </article>
 
@@ -137,7 +178,7 @@
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">hate-speech</span>
-          <span class="paper-tag">survey</span>
+          <span class="paper-tag">position</span>
           <span class="paper-tag">multilingual</span>
         </div>
       </article>
@@ -161,7 +202,7 @@
         <div class="paper-card__tags">
           <span class="paper-tag">multilingual</span>
           <span class="paper-tag">text-detoxification</span>
-          <span class="paper-tag">text-style-transfer</span>
+          <span class="paper-tag">shared-task</span>
         </div>
       </article>
 
@@ -208,7 +249,7 @@
         <div class="paper-card__tags">
           <span class="paper-tag">fake-news</span>
           <span class="paper-tag">multilingual</span>
-          <span class="paper-tag">llm</span>
+          <span class="paper-tag">harmful-information</span>
         </div>
       </article>
 
@@ -232,7 +273,7 @@
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">formality</span>
-          <span class="paper-tag">text-style-transfer</span>
+          <span class="paper-tag">classification</span>
           <span class="paper-tag">multilingual</span>
         </div>
       </article>
@@ -257,8 +298,7 @@
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">text-detoxification</span>
-          <span class="paper-tag">multilingual</span>
-          <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">dataset-creation</span>
         </div>
       </article>
 
@@ -279,8 +319,7 @@
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">text-detoxification</span>
-          <span class="paper-tag">multilingual</span>
-          <span class="paper-tag">llm</span>
+          <span class="paper-tag">text-style-transfer</span>
         </div>
       </article>
 
@@ -305,6 +344,7 @@
         <div class="paper-card__tags">
           <span class="paper-tag">fake-news</span>
           <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">cross-lingual</span>
         </div>
       </article>
 
