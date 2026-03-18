@@ -670,4 +670,13 @@ img { max-width: 100%; display: block; }
     background: rgba(0, 0, 0, 0.05);  /* subtle highlight — adjust as needed */
   }
  }
+
+/* For presentation pdf */
+ @media (max-width: 768px) {
+  .pdf-desktop { display: none; }
+  .pdf-mobile  { display: block; }
+}
+@media (min-width: 769px) {
+  .pdf-mobile  { display: none; }
+}
 }
