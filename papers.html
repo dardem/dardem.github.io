@@ -16,6 +16,125 @@
       <p>[<a href="https://scholar.google.com/citations?user=mLX6olgAAAAJ&hl=en">Google Scholar</a>]</p>
     </header>
 
+      <style>
+      /* ── Intro paragraph ── */
+      .papers-intro {
+        margin: 1.4em 0 1.8em 0;
+        font-size: 1.05em;
+        line-height: 1.75;
+        color: inherit;
+        max-width: 820px;
+      }
+     
+      /* ── Inline keyword chip ── */
+      .kw-chip {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 0.78em;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        padding: 2px 9px;
+        border-radius: 999px;
+        border: 1.5px solid currentColor;
+        margin: 0 1px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+        transition: background 0.18s, color 0.18s, transform 0.12s;
+        /* Neutral default — will inherit the page accent colour */
+        color: #4a6fa5;
+        background: rgba(74, 111, 165, 0.08);
+        text-decoration: none;
+        user-select: none;
+        white-space: nowrap;
+      }
+     
+      .kw-chip:hover {
+        background: #4a6fa5;
+        color: #fff;
+        transform: translateY(-1px);
+      }
+     
+      /* Active/selected state — mirrors what your filter uses */
+      .kw-chip.kw-active {
+        background: #4a6fa5;
+        color: #fff;
+      }
+     
+      /* Trophy chip gets a warm gold tint */
+      .kw-chip[data-kw="🏆"] {
+        color: #b8860b;
+        background: rgba(184, 134, 11, 0.1);
+        border-color: #b8860b;
+      }
+      .kw-chip[data-kw="🏆"]:hover,
+      .kw-chip[data-kw="🏆"].kw-active {
+        background: #b8860b;
+        color: #fff;
+      }
+    </style>
+   
+    <p class="papers-intro">
+      My research spans Responsible AI and NLP, with a focus on making language technologies
+      more transparent, equitable, and socially impactful. Core themes include
+      <span class="kw-chip" data-kw="explainability">explainability</span>
+      of model decisions, efficient
+      <span class="kw-chip" data-kw="cross-lingual">cross-lingual</span>
+      knowledge transfer, and building inclusive
+      <span class="kw-chip" data-kw="multilingual">multilingual</span>
+      datasets and systems. I apply these to socially critical domains — including
+      <span class="kw-chip" data-kw="hate-speech">hate-speech</span>,
+      <span class="kw-chip" data-kw="sexism-mitigation">sexism</span>,
+      and
+      <span class="kw-chip" data-kw="fake-news">fake-news</span>
+      detection. Beyond methodology, I contribute
+      <span class="kw-chip" data-kw="position">position</span>
+      papers and organise
+      <span class="kw-chip" data-kw="shared-task">shared-task</span>
+      competitions. Several of these works have received significant recognition
+      from the research community&nbsp;<span class="kw-chip" data-kw="🏆">🏆</span>.
+    </p>
+   
+    <script>
+        /**
+         * When a .kw-chip is clicked, find the matching filter button on the page
+         * and programmatically click it — so the chip acts as an alias for the
+         * existing filter mechanism regardless of its internal implementation.
+         *
+         * Fallback: if no filter button is found, the chip visually toggles itself
+         * as "active" so the user at least gets visual feedback.
+         */
+        document.querySelectorAll('.kw-chip').forEach(function(chip) {
+          chip.addEventListener('click', function() {
+            var keyword = chip.dataset.kw;
+       
+            // ── Strategy 1: look for a dedicated filter button / link whose
+            //    visible text exactly matches the keyword.
+            var filterBtn = Array.from(
+              document.querySelectorAll('button, a, [class*="filter"], [class*="tag"], [class*="label"]')
+            ).find(function(el) {
+              return el.dataset.filter === keyword ||
+                     el.dataset.tag === keyword ||
+                     el.textContent.trim() === keyword;
+            });
+       
+            if (filterBtn) {
+              filterBtn.click();
+              // Mirror active state
+              chip.classList.toggle('kw-active', filterBtn.classList.contains('active') ||
+                                                  filterBtn.classList.contains('selected'));
+              return;
+            }
+       
+            // ── Strategy 2: dispatch a custom event that a filter system might listen to.
+            document.dispatchEvent(new CustomEvent('kwFilter', { detail: { keyword: keyword } }));
+       
+            // ── Visual-only toggle as last resort
+            chip.classList.toggle('kw-active');
+          });
+        });
+    </script>
+
     <!-- ── Tag Filters ── -->
     <div class="papers-filters" id="filtersContainer">
       <span class="papers-filters__label">Filter:</span>
