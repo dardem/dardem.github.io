@@ -13,12 +13,12 @@
   <main class="container page-content">
     <header class="page-header">
       <h1>Projects</h1>
-      <p>Research projects, tools, and datasets</p>
     </header>
 
     <p>
       I am a huge supporter of opensource. All my research is publicly available not only in the form of papers,
-      but also opensourced datasets and models on 🤗HuggingFace. [<a href="https://huggingface.co/dardem">My🤗profile</a>] [<a href="https://huggingface.co/tum-nlp">TUM-NLP🤗profile</a>]
+      but also opensourced datasets and models on 🤗HuggingFace. All together, my open-sourced models and datasets
+      have reached <b>over 3M downloads</b>. [<a href="https://huggingface.co/dardem">My🤗profile</a>] [<a href="https://huggingface.co/tum-nlp">TUM-NLP🤗profile</a>]
     </p>
 
     <div class="projects-grid">
@@ -28,7 +28,7 @@
            Duplicate this block to add more projects.
            ══════════════════════════════════ -->
 
-      <article class="project-card">
+      <article class="project-card" id="nlp4sg">
         <!-- Image: save your image as assets/images/project-detox.jpg
              Replace the placeholder div with:
              <div class="project-card__img"><img src="assets/images/project-detox.jpg" alt="TextDetox" /></div>
@@ -63,11 +63,10 @@
               🤗 HuggingFace
             </a>
             -->
-          </div>
         </div>
       </article>
 
-      <article class="project-card">
+      <article class="project-card" id="textdetox">
         <!-- Image: save your image as assets/images/project-detox.jpg
              Replace the placeholder div with:
              <div class="project-card__img"><img src="assets/images/project-detox.jpg" alt="TextDetox" /></div>
@@ -77,19 +76,17 @@
         <div class="project-card__body">
           <h3>TextDetox: Multilingual Text Detoxification</h3>
           <p>
-            A massive multilingual project (15 lanuguages) on proactive toxic speech mitigation.
+            A massive multilingual project (15 languages) on proactive toxic speech mitigation.
             Over several years, we created multilingual parallel datasets for text style transfer - text detoxification -
             as well as toxicity classification and explanation datasets and models. It resulted in several publications
             at EMNLP2021, ACL2022, NAACL2024, and COLING2025. The project was featured as shared tasks at
             RUSSE2022, CLEF2024, and CLEF2025. The materials have been enormously used by community with >2M downloads.
           </p>
           <div class="project-card__links">
-            <div class="project-card__links">
             <a href="https://textdetox.github.io" target="_blank" rel="noopener" class="project-link">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
               WebPage
             </a>
-          </div>
             <!-- Add HuggingFace / other links: -->
             <a href="https://huggingface.co/textdetox" target="_blank" class="project-link">
               🤗 HuggingFace
@@ -98,7 +95,7 @@
         </div>
       </article>
 
-      <article class="project-card">
+      <article class="project-card" id="hateprism">
         <!-- <div class="project-card__img-placeholder">😤</div> -->
         <div class="project-card__img"><img src="assets/images/hatespeech_proactive.png" alt="Hate Speech Proactive Mitigation" /></div>
         <div class="project-card__body">
@@ -122,7 +119,7 @@
         </div>
       </article>
 
-      <article class="project-card">
+      <article class="project-card" id="ukrdetect">
         <!--<div class="project-card__img-placeholder">📰</div>-->
         <div class="project-card__img"><img src="assets/images/ukr_detect_logo.png" alt="UkrDetect" /></div>
         <div class="project-card__body">
@@ -149,13 +146,13 @@
         </div>
       </article>
 
-      <article class="project-card">
+      <article class="project-card" id="lowresource">
         <!--<div class="project-card__img-placeholder">🌍</div>-->
         <div class="project-card__img"><img src="assets/images/low_resource_logo.png" alt="Low Resource" /></div>
         <div class="project-card__body">
           <h3>Low-Resource NLP</h3>
           <p>
-            Overall, I support the development of technologies for other underrepresnted language.
+            Overall, I support the development of technologies for other underrepresented language.
             We organise Limited-resource LLMs shared task @ WMT featuring Ukrainian and Sorbian languages.
             At LREC2026, we host a hands-on tutorial designed for NLP practitioners working with multilingual projects and
             low-resource languages. Covers end-to-end pipelines from data collection to models training

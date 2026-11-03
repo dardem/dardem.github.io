@@ -13,7 +13,6 @@
   <main class="container page-content">
     <header class="page-header">
       <h1>Papers</h1>
-      <p>[<a href="https://scholar.google.com/citations?user=mLX6olgAAAAJ&hl=en">Google Scholar</a>]</p>
     </header>
 
       <style>
@@ -42,34 +41,34 @@
         top: -1px;
         transition: background 0.18s, color 0.18s, transform 0.12s;
         /* Neutral default — will inherit the page accent colour */
-        color: #b8860b;
-        background: rgba(184, 134, 11, 0.1);
+        color: var(--ink);
+        background: var(--surface);
         text-decoration: none;
         user-select: none;
         white-space: nowrap;
       }
      
       .kw-chip:hover {
-        background: #b8860b;
+        background: var(--ink);
         color: #fff;
         transform: translateY(-1px);
       }
      
       /* Active/selected state — mirrors what your filter uses */
       .kw-chip.kw-active {
-        background: #b8860b;
+        background: var(--ink);
         color: #fff;
       }
      
       /* Trophy chip gets a warm gold tint */
       .kw-chip[data-kw="🏆"] {
-        color: #b8860b;
-        background: rgba(184, 134, 11, 0.1);
-        border-color: #b8860b;
+        color: var(--ink);
+        background: var(--surface);
+        border-color: var(--ink);
       }
       .kw-chip[data-kw="🏆"]:hover,
       .kw-chip[data-kw="🏆"].kw-active {
-        background: #b8860b;
+        background: var(--ink);
         color: #fff;
       }
     </style>
@@ -93,6 +92,8 @@
       <span class="kw-chip" data-kw="shared-task">shared-task</span>
       competitions. Several of these works have received significant recognition
       from the research community&nbsp;<span class="kw-chip" data-kw="🏆">🏆</span>.
+      The full, always up-to-date list is on
+      <a href="https://scholar.google.com/citations?user=mLX6olgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
     </p>
    
     <script>
@@ -838,6 +839,31 @@
 
       let activeTag = null;
 
+      // ── Year dividers: inserted automatically before the first paper of each year.
+      //    The year is read from the label (e.g. "EMNLP 2025"); papers must stay newest-first.
+      const dividers = [];
+      let lastYear = null;
+      cards.forEach(c => {
+        const m = (c.querySelector('.paper-card__year')?.textContent || '').match(/(19|20)\d{2}/);
+        const year = m ? m[0] : 'Other';
+        c.dataset.year = year;
+        if (year !== lastYear) {
+          const h = document.createElement('h2');
+          h.className = 'year-divider';
+          h.textContent = year;
+          h.dataset.year = year;
+          c.parentNode.insertBefore(h, c);
+          dividers.push(h);
+          lastYear = year;
+        }
+      });
+      function updateDividers() {
+        dividers.forEach(h => {
+          const any = cards.some(c => c.dataset.year === h.dataset.year && !c.classList.contains('hidden'));
+          h.style.display = any ? '' : 'none';
+        });
+      }
+
       // Render filter buttons
       tags.forEach(tag => {
         const btn = document.createElement('button');
@@ -863,6 +889,7 @@
             c.classList.toggle('hidden', !tags.includes(tag));
           });
         }
+        updateDividers();
       }
     })();
   </script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Daryna Dementieva</title>
+  <meta name="description" content="Blog of Daryna Dementieva: notes on research, Responsible AI, and academic life." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <script src="assets/js/nav.js"></script>
+
+  <main class="container container--wide page-content">
+    <header class="page-header">
+      <h1>Blog</h1>
+    </header>
+
+    <!--
+      HOW TO ADD A POST
+      1. Copy blog/hello-world.html to blog/<your-slug>.html and edit it.
+      2. Add a card below (newest first), pointing to that file.
+
+      Card template — with a real image:
+      <a class="hl-card" href="blog/your-slug.html">
+        <div class="hl-card__media hl-card__media--cover"><img src="assets/images/blog/your-slug.jpg" alt="" loading="lazy" /></div>
+        <div class="hl-card__body">
+          <span class="hl-card__kicker">Mon YYYY · 5 min read</span>
+          <h3>Post title</h3>
+          <p class="hl-card__tldr"><b>TL;DR</b>One or two sentences.</p>
+          <span class="hl-card__go">Read →</span>
+        </div>
+      </a>
+
+      Without an image, use a typographic cover instead:
+        <div class="hl-card__media hl-card__media--dark"><span class="hl-card__media-label">Title</span></div>
+    -->
+    <div class="card-grid">
+
+      <a class="hl-card" href="blog/hello-world.html">
+        <div class="hl-card__media hl-card__media--dark"><span class="hl-card__media-label">Hello, world!</span></div>
+        <div class="hl-card__body">
+          <span class="hl-card__kicker">[Mon YYYY] · 1 min read</span>
+          <h3>Hello, world!</h3>
+          <p class="hl-card__tldr"><b>TL;DR</b>[One or two sentences: what this blog is about.]</p>
+          <span class="hl-card__go">Read →</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+</body>
+</html>

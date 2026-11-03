@@ -4,43 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bio — Daryna Dementieva</title>
-  <meta name="description" content="Biography of Daryna Dementieva, NLP researcher at TU Munich." />
+  <meta name="description" content="Short bio, bio for talks, extended bio, and photos of Daryna Dementieva, Responsible AI and Language Technologies researcher at TU Munich." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <script src="assets/js/nav.js"></script>
 
   <main class="container page-content">
-    <header class="page-header">
+    <header class="page-header page-header--menu">
       <h1>Bio</h1>
-      <p>About me and my professional journey</p>
     </header>
 
-    <div class="bio-content">
+    <nav class="page-menu" aria-label="On this page">
+      <a href="#short">Short Bio</a>
+      <a href="#talks">Bio for Talks</a>
+      <a href="#extended">Extended Bio</a>
+      <a href="#photos">Photos</a>
+    </nav>
+
+    <!-- ── Short bio ── -->
+    <section class="bio-block" id="short">
+      <h2>Short Bio <button class="copy-btn" type="button" data-copy="short-text">Copy</button></h2>
+      <div id="short-text">
+        <p>
+          Dr. Daryna Dementieva is a postdoctoral researcher in Responsible AI and Language
+          Technologies at the Technical University of Munich. Her work focuses on trustworthy AI
+          evaluation, combating harmful content online, and multilingual, low-resource language
+          technologies, including Ukrainian. She received the ACL 2025 Best Resource Paper Award.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Bio for talks ── -->
+    <section class="bio-block" id="talks">
+      <h2>Bio for Talks <button class="copy-btn" type="button" data-copy="talks-text">Copy</button></h2>
+      <div id="talks-text">
+        <p>
+          Dr. Daryna Dementieva is a Responsible AI and Language Technologies researcher at the
+          Technical University of Munich. She received her PhD in 2022 with the dissertation
+          “Methods for Fighting Harmful Multilingual Textual Content”, developing multilingual NLP
+          methods to combat toxic speech and fake news. Her current research focuses on NLP for
+          Social Good, with a strong commitment to inclusive, truly multilingual, and low-resource
+          language technologies — including Ukrainian. Dr. Dementieva is the author of more than 50
+          peer-reviewed papers and has received multiple recognitions, including the ACL 2025 Best
+          Resource Paper Award and recognition by UNESCO. She organises the NLP for Positive Impact
+          Workshop and the TextDetox and LLMs with Limited Resources shared tasks. Her work advances
+          responsible language technologies that genuinely serve communities worldwide.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Extended bio ── -->
+    <section class="bio-block" id="extended">
+      <h2>Extended Bio</h2>
+      <div class="bio-content">
+        <p>
+          I am a postdoctoral researcher at the <a href="https://www.cs.cit.tum.de/dast/startseite/" target="_blank" rel="noopener">Data Science and Analytics Group</a>
+          at the Technical University of Munich (TUM), working under the supervision of
+          <a href="https://alexfraser.github.io" target="_blank" rel="noopener">Prof. Alex Fraser</a>. I hold a PhD from the
+          Skolkovo Institute of Science and Technology (Skoltech), where I was advised by
+          <a href="https://scholar.google.com/citations?user=BYba9hcAAAAJ&hl=ru" target="_blank" rel="noopener">Prof. Alexander Panchenko</a>.
+          My doctoral dissertation —
+          <a href="https://back.skoltech.ru/storage/app/media/defenses/2022/daryna-dementieva/theme/thesis5.pdf" target="_blank" rel="noopener">Methods for Fighting Harmful Multilingual Textual Content</a>
+          — developed multilingual NLP methods to combat toxic speech and detect fake news. My
+          research mission is building AI and Language Technologies for Social Good.
+        </p>
+        <p class="ph-text">[More about your path: education, key moves, what drives your research, what comes next.]</p>
+        <p class="ph-text">[Optional: languages you speak, where you are based, how to reach you.]</p>
+      </div>
+    </section>
+
+    <!-- ── Photos for talk announcements ── -->
+    <section class="bio-block" id="photos">
+      <h2>Photos</h2>
+      <p class="bio-note">Free to use for talk announcements, programmes, and websites. [Photo credit: Name]</p>
       <!--
-        Replace the paragraphs below with your own biography text.
-        The first letter of the first paragraph will be styled as a drop cap automatically.
+        Replace each <div class="ph-img">…</div> with <img src="assets/images/press-1.jpg" alt="Daryna Dementieva" />
+        and point the "Download" link to a high-resolution version, e.g. assets/images/press-1-hires.jpg
       -->
-
-      <p>
-        I am a postdoctoral researcher at the <a href="https://www.cs.cit.tum.de/dast/startseite/">Data Science and Analytics Group</a> at the Technical University of Munich (TUM), 
-        working under the supervision of <a href="https://alexfraser.github.io">Prof. Alex Fraser</a>. I hold a PhD from the Skolkovo Institute of Science and Technology (Skoltech), 
-        where I was advised by <a href="https://scholar.google.com/citations?user=BYba9hcAAAAJ&hl=ru">Prof. Alexander Panchenko</a>. 
-        My doctoral dissertation — <a href="https://back.skoltech.ru/storage/app/media/defenses/2022/daryna-dementieva/theme/thesis5.pdf">Methods for Fighting Harmful Multilingual Textual Content</a> — 
-        developed multilingual NLP methods to combat toxic speech and detect fake news. My research mission is building AI and Language Technologies for Social Good.
-      </p>
-
-      <p>
-        <b>Bio for Talks:</b> Dr. Daryna Dementieva is a Responsible AI and Language Technologies researcher at the Technical University of Munich. 
-        She received her PhD in 2022 with the dissertation Methods for Fighting Harmful Multilingual Textual Content, developing multilingual NLP methods to combat toxic speech and fake news. 
-        Her current research focuses on NLP for Social Good, with a strong commitment to inclusive, truly multilingual, and low-resource language technologies — including Ukrainian. 
-        Dr. Dementieva is the author of more than 50 peer-reviewed papers and has received multiple recognitions, including the 
-        <b>ACL 2025 Best Resource Paper Award</b> and recognition by UNESCO. She is the organiser of the NLP for Positive Impact Workshop and the TextDetox and LLMs with Limited Resources shared tasks. 
-        Her work advances responsible language technologies that genuinely serve communities worldwide.
-      </p>
-
-    </div>
+      <div class="press-photos">
+        <figure class="press-photo">
+          <div class="ph-img">Photo 1 · portrait</div>
+          <figcaption><span>[Portrait, vertical]</span><a href="#" download>Download hi-res ↓</a></figcaption>
+        </figure>
+        <figure class="press-photo">
+          <div class="ph-img">Photo 2</div>
+          <figcaption><span>[Second photo, e.g. on stage]</span><a href="#" download>Download hi-res ↓</a></figcaption>
+        </figure>
+      </div>
+    </section>
   </main>
 
+  <script>
+    // "Copy" buttons: copy the bio text to the clipboard for organisers
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const el = document.getElementById(btn.dataset.copy);
+        const text = el.innerText.replace(/\s+\n/g, '\n').trim();
+        navigator.clipboard.writeText(text).then(() => {
+          btn.textContent = 'Copied';
+          btn.classList.add('done');
+          setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+        });
+      });
+    });
+  </script>
 </body>
 </html>

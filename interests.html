@@ -3,142 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3x3 Image Grid</title>
-    <style>
-        /* This is the container holding all the images */
-        .image-grid {
-            display: grid;
-            /* Creates 3 columns of equal width */
-            grid-template-columns: repeat(3, 1fr);
-            /* Adds a 10px gap between the images */
-            gap: 10px; 
-            /* Optional: limits the maximum width of the whole grid */
-            max-width: 900px;
-            margin: 0 auto; /* Centers the grid on the page */
-        }
-
-        /* This styles the images inside the grid */
-        .image-grid img {
-            width: 100%;
-            height: 100%;
-            /* Forces images to be perfect squares without stretching */
-            aspect-ratio: 1 / 1; 
-            object-fit: cover; 
-            border-radius: 8px; /* Optional: slightly rounded corners */
-        }
-    </style>
   <title>Interests — Daryna Dementieva</title>
-  <meta name="description" content="Personal interests of Daryna Dementieva." />
+  <meta name="description" content="Personal interests of Daryna Dementieva: sports, running, travelling, photography, reading, and food." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <script src="assets/js/nav.js"></script>
 
-  <main class="container page-content">
-    <header class="page-header">
+  <main class="container container--wide page-content">
+    <header class="page-header page-header--menu">
       <h1>Interests</h1>
-      <p>Beyond the research lab</p>
     </header>
 
-    <div class="prose-section">
+    <nav class="page-menu" aria-label="On this page">
+      <a href="#sports">Sports</a>
+      <a href="#running">Running</a>
+      <a href="#travelling">Travelling</a>
+      <a href="#photography">Photography</a>
+      <a href="#reading">Reading</a>
+      <a href="#food">Food &amp; Brunch</a>
+    </nav>
 
-      <!--
-        ════════════════════════════════════════════════════
-        Replace the placeholder text and photo blocks below
-        with your own content. Add or remove sections freely.
-        ════════════════════════════════════════════════════
-      -->
+    <!--
+      Each block is a .feature. Blocks alternate automatically by adding "feature--reverse"
+      to every second one (photos left / text right, then text left / photos right).
+      Photos: one image → <div class="feature__media">,
+              two images → <div class="feature__media feature__media--two">.
+      Replace any <div class="ph-img">…</div> with <img src="assets/images/…" alt="…" />.
+      To add a section: copy a block, give it a new id, and add a link to the menu above.
+    -->
 
-      <p>
-        I am quite outgoing and sports person. Since my school years, I am into water sports - swimming, surfing, and windsuring. Since Bachelor, I was doing athletics,
-        which grew into functional trainings combined with yoga and pilates. Due to living in Germany, love hikes.
-      </p>
+    <!-- Sports: photos left, text right -->
+    <section class="feature" id="sports">
+      <div class="feature__media">
+        <img src="assets/images/portugal_2022.jpg" alt="Surfing near Porto, Portugal" />
+      </div>
+      <div class="feature__text">
+        <div class="section__eyebrow">01</div>
+        <h2>Sports</h2>
+        <p>
+          I am quite an outgoing and sporty person. Since my school years, I have been into water
+          sports — swimming, surfing, and windsurfing. During my Bachelor's, I did athletics, which
+          grew into functional training combined with yoga and pilates. And living in Germany, I
+          love hiking.
+        </p>
+      </div>
+    </section>
 
-      <p>
-        I cannot imagine my life without reading, especially, philosophical books. As a person working with AI and trying to find a balance between static human life
-        and disruptive innovations, I am fascinated by sci-fi and discussions about human nature. <br>
-        Together with that, feminism is a huge part of my life. 
-      </p>
+    <!-- Running: text left, photos right -->
+    <section class="feature feature--reverse" id="running">
+      <div class="feature__media feature__media--two">
+        <div class="ph-img">Photo</div>
+        <div class="ph-img">Photo</div>
+      </div>
+      <div class="feature__text">
+        <div class="section__eyebrow">02</div>
+        <h2>Running</h2>
+        <p class="ph-text">[Your text about running — races, routes, what it gives you.]</p>
+      </div>
+    </section>
 
-      <p>
-        One of my regular ways to spend a weekend day: brunch with friends in a new place.
-      </p>
-
-      <p>
-        I also heavily like exploring new countries, cultures, and cuisines. <br>
-        <b>Countries visited (<i>status on March, 2026</i>):</b> 31.
-      </p>
-
-      <div class="image-grid">
-        <img src="assets/images/beijing_2025.jpg" title="Hiking the Great Wall, China, October 2025">
-        <img src="assets/images/madrid_2025.jpg" title="Enjoying seafood market in Madrid">
-        <img src="assets/images/england_2025.jpg" title="Amazed by England's Seven Sisters Cliffs">
-        <img src="assets/images/unesco_2025.jpg" title="Giving a talk at UNESCO LT4All2025, Paris">
-        <img src="assets/images/uae_2025.jpg" title="Shawarma in the UAE desert">
-        <img src="assets/images/nlp4pi_miami_2024.jpg" title="NLP4PI Workshop at EMNLP2024 in Miami">
-        <img src="assets/images/mexico_2024.jpg" title="Balloon trip over Mexico's Pyramids">
-        <img src="assets/images/kolkata_2024.jpg" title="Fascinated by India in Kolkata">
-        <img src="assets/images/portugal_2022.jpg" title="Surfing near Porto, Potrugal">
-    </div>
-
-      <!--
-      <h2>[Interest Area 1 — e.g., Languages]</h2>
-
-      <p>
-        [Write about this interest here. Feel free to be personal and conversational —
-        this page is a chance to show who you are beyond your CV.]
-      </p>
-      -->
-
-      <!--
-        Photos: save images to assets/images/ and update src attributes.
-        You can have 1–4 photos per grid; adjust grid columns via inline style if needed.
-      -->
-      <!--
-      <div class="photo-grid">
-        <div class="photo-grid__item">
-          <!-- <img src="assets/images/interest-1.jpg" alt="Description" /> 
-          🌍
-        </div>
-        <div class="photo-grid__item">
-          <!-- <img src="assets/images/interest-2.jpg" alt="Description" /> 
-          ✈️
+    <!-- Travelling: photos left, text right -->
+    <section class="feature" id="travelling">
+      <div class="feature__media feature__media--two">
+        <img src="assets/images/beijing_2025.jpg" alt="Hiking the Great Wall, China, October 2025" />
+        <img src="assets/images/mexico_2024.jpg" alt="Balloon trip over Mexico's pyramids" />
+      </div>
+      <div class="feature__text">
+        <div class="section__eyebrow">03</div>
+        <h2>Travelling</h2>
+        <p>
+          I love exploring new countries, cultures, and cuisines.
+        </p>
+        <div class="stat">
+          <span class="stat__num">31</span>
+          <span class="stat__label">countries visited<br>(as of March 2026)</span>
         </div>
       </div>
-      <p class="photo-caption">[Optional photo caption]</p>
+    </section>
 
-
-      <h2>[Interest Area 2 — e.g., Travel / Culture]</h2>
-
-      <p>
-        [Write about this interest here.]
-      </p>
-
-      <div class="photo-grid">
-        <div class="photo-grid__item">
-          <!-- <img src="assets/images/interest-3.jpg" alt="Description" /> 
-          🎨
-        </div>
-        <div class="photo-grid__item">
-          <!-- <img src="assets/images/interest-4.jpg" alt="Description" /> 
-          🎵
-        </div>
-        <div class="photo-grid__item">
-          <!-- <img src="assets/images/interest-5.jpg" alt="Description" /> 
-          📖
-        </div>
+    <!-- Photography: text left, photos right -->
+    <section class="feature feature--reverse" id="photography">
+      <div class="feature__media feature__media--two">
+        <img src="assets/images/england_2025.jpg" alt="England's Seven Sisters cliffs" />
+        <img src="assets/images/kolkata_2024.jpg" alt="Kolkata, India" />
       </div>
+      <div class="feature__text">
+        <div class="section__eyebrow">04</div>
+        <h2>Photography</h2>
+        <p class="ph-text">[Your text about photography — what you like to shoot, camera, favourite places.]</p>
+      </div>
+    </section>
 
+    <!-- Reading: photos left, text right -->
+    <section class="feature" id="reading">
+      <div class="feature__media">
+        <div class="ph-img">Photo</div>
+      </div>
+      <div class="feature__text">
+        <div class="section__eyebrow">05</div>
+        <h2>Reading</h2>
+        <p>
+          I cannot imagine my life without reading, especially philosophical books. As a person
+          working with AI and trying to find a balance between static human life and disruptive
+          innovations, I am fascinated by sci-fi and discussions about human nature. Feminism is
+          also a huge part of my life.
+        </p>
+        <p><a href="books.html">Books I recommend →</a></p>
+      </div>
+    </section>
 
-      <h2>[Interest Area 3 — optional]</h2>
+    <!-- Food: text left, photos right -->
+    <section class="feature feature--reverse" id="food">
+      <div class="feature__media feature__media--two">
+        <img src="assets/images/madrid_2025.jpg" alt="Seafood market in Madrid" />
+        <img src="assets/images/uae_2025.jpg" alt="Shawarma in the UAE desert" />
+      </div>
+      <div class="feature__text">
+        <div class="section__eyebrow">06</div>
+        <h2>Food &amp; Brunch</h2>
+        <p>
+          One of my regular ways to spend a weekend: brunch with friends in a new place.
+        </p>
+        <p class="ph-text">[More text if you like.]</p>
+      </div>
+    </section>
 
-      <p>
-        [Write about this interest here.]
-      </p>
-      -->
-
-    </div>
   </main>
-
 </body>
 </html>
