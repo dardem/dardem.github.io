@@ -33,6 +33,13 @@
     <a href="${root}index.html" class="nav__brand">Daryna Dementieva</a>
     <ul class="nav__links" id="navLinks">
       ${pages.map(link).join('')}
+      <li class="nav__more" id="navMore" hidden>
+        <button class="nav__more-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          More
+          <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <ul class="nav__submenu" id="navSubmenu"></ul>
+      </li>
     </ul>
     <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
@@ -42,19 +49,56 @@
 
   document.body.insertAdjacentHTML('afterbegin', navHTML);
 
+  const inner   = document.querySelector('.nav__inner');
+  const brand   = document.querySelector('.nav__brand');
   const toggle  = document.getElementById('navToggle');
   const links   = document.getElementById('navLinks');
+  const moreLi  = document.getElementById('navMore');
+  const moreBtn = moreLi.querySelector('.nav__more-btn');
+  const submenu = document.getElementById('navSubmenu');
+  const items   = Array.from(links.children).filter(li => li !== moreLi);
+
+  // ── "More" menu: when the screen is too narrow for every link, the last
+  //    links move into a "More" dropdown. Below 640px the ☰ menu takes over.
+  const MOBILE = 640;
+  function fitMenu() {
+    items.forEach(li => links.insertBefore(li, moreLi));       // reset: all links back in the bar
+    moreLi.hidden = true;
+    if (window.innerWidth <= MOBILE) return;
+    const cs = getComputedStyle(inner);
+    const available = inner.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight)
+                      - brand.offsetWidth - 24;
+    if (links.scrollWidth <= available) return;
+    moreLi.hidden = false;
+    for (let i = items.length - 1; i > 0 && links.scrollWidth > available; i--) {
+      submenu.insertBefore(items[i], submenu.firstChild);
+    }
+    moreBtn.classList.toggle('active', !!submenu.querySelector('a.active'));
+  }
+  fitMenu();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitMenu);
+  window.addEventListener('load', fitMenu);
+  let raf;
+  window.addEventListener('resize', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(fitMenu); });
 
   function closeAll() {
     links.classList.remove('open');
     toggle.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    moreLi.classList.remove('open');
+    moreBtn.setAttribute('aria-expanded', 'false');
   }
 
   toggle.addEventListener('click', () => {
     const isOpen = links.classList.toggle('open');
     toggle.classList.toggle('open', isOpen);
     toggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  moreBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    const isOpen = moreLi.classList.toggle('open');
+    moreBtn.setAttribute('aria-expanded', isOpen);
   });
 
   links.addEventListener('click', e => { if (e.target.tagName === 'A') closeAll(); });

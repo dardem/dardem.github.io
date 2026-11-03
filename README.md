@@ -2,6 +2,19 @@
 
 A static multi-page academic portfolio ready to deploy as a GitHub Pages site.
 
+## 🔄 After changing CSS or JS: bump the version
+
+Every page loads the shared files with a version tag, e.g.
+`assets/css/style.css?v=20261104`. Browsers cache these files, so whenever you change
+`style.css` or `nav.js`, change the number (e.g. to today's date) on **all** pages,
+so visitors get the new version straight away. One command in Terminal, from the repo folder:
+
+```bash
+sed -i '' -E 's/(style\.css|nav\.js)\?v=[0-9a-z]+/\1?v=20261120/g' *.html blog/*.html
+```
+
+(Replace `20261120` with the new date. Changes to HTML pages alone don't need this.)
+
 ## 🚀 Deployment
 
 1. Push this folder to a GitHub repository named `<your-username>.github.io`
