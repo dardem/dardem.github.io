@@ -381,6 +381,15 @@ strong, b { font-weight: 600; }
   max-width: 60ch;
 }
 .hero__bio strong { color: var(--on-dark); font-weight: 500; }
+.hero__bio p + p { margin-top: 0.9rem; }
+.hero__bio a {
+  color: var(--on-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--cognac-lt);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.hero__bio a:hover { color: var(--cognac-lt); }
 
 .hero__keywords {
   display: flex;

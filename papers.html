@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Papers — Daryna Dementieva</title>
   <meta name="description" content="Publications by Daryna Dementieva." />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261120" />
+  <link rel="icon" href="assets/icons/favicon.svg?v=20261110" type="image/svg+xml" />
+  <link rel="icon" href="assets/icons/favicon-32.png?v=20261110" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png?v=20261110" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261110" />
 </head>
 <body>
-  <script src="assets/js/nav.js?v=20261120"></script>
+  <script src="assets/js/nav.js?v=20261110"></script>
 
   <main class="container page-content">
     <header class="page-header">
@@ -100,45 +103,6 @@
       <a href="https://scholar.google.com/citations?user=mLX6olgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
     </p>
    
-    <script>
-        /**
-         * When a .kw-chip is clicked, find the matching filter button on the page
-         * and programmatically click it — so the chip acts as an alias for the
-         * existing filter mechanism regardless of its internal implementation.
-         *
-         * Fallback: if no filter button is found, the chip visually toggles itself
-         * as "active" so the user at least gets visual feedback.
-         */
-        document.querySelectorAll('.kw-chip').forEach(function(chip) {
-          chip.addEventListener('click', function() {
-            var keyword = chip.dataset.kw;
-       
-            // ── Strategy 1: look for a dedicated filter button / link whose
-            //    visible text exactly matches the keyword.
-            var filterBtn = Array.from(
-              document.querySelectorAll('button, a, [class*="filter"], [class*="tag"], [class*="label"]')
-            ).find(function(el) {
-              return el.dataset.filter === keyword ||
-                     el.dataset.tag === keyword ||
-                     el.textContent.trim() === keyword;
-            });
-       
-            if (filterBtn) {
-              filterBtn.click();
-              // Mirror active state
-              chip.classList.toggle('kw-active', filterBtn.classList.contains('active') ||
-                                                  filterBtn.classList.contains('selected'));
-              return;
-            }
-       
-            // ── Strategy 2: dispatch a custom event that a filter system might listen to.
-            document.dispatchEvent(new CustomEvent('kwFilter', { detail: { keyword: keyword } }));
-       
-            // ── Visual-only toggle as last resort
-            chip.classList.toggle('kw-active');
-          });
-        });
-    </script>
 
     <!-- ── Tag Filters ── -->
     <div class="papers-filters" id="filtersContainer">
@@ -159,10 +123,9 @@
       -->
 
       <!-- ══════ 2026 ══════ -->
-      <article class="paper-card" data-tags="llm,evaluation,low-resource">
-        <article class="paper-card" data-tags="hate-speech,llm,text-detoxification">
+      <article class="paper-card" data-tags="llm,evaluation,low-resource,shared-task">
         <div class="paper-card__year">WMT @ EMNLP 2026</div>
-        <h3><a href="https://aclanthology.org/2026.emnlp-main.1643/" target="_blank" rel="noopener">
+        <h3><a href="https://aclanthology.org/volumes/2026.wmt-1/" target="_blank" rel="noopener">
           Findings of the WMT 2026 Shared Task: Multitask LLMs with Limited Resources
         </a></h3>
         <div class="paper-card__venue">
@@ -176,6 +139,7 @@
           <span class="paper-tag">llm</span>
           <span class="paper-tag">evaluation</span>
           <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">shared-task</span>
         </div>
       </article>
       
@@ -200,12 +164,12 @@
 
       <article class="paper-card" data-tags="hate-speech,llm,uncertainty">
         <div class="paper-card__year">NLP4PI @ EMNLP 2026</div>
-        <h3><a href="https://aclanthology.org/2026.emnlp-main.1643/" target="_blank" rel="noopener">
+        <h3><a href="https://aclanthology.org/2026.nlp4pi-1.41/" target="_blank" rel="noopener">
           Uncertainty Quantification to Improve the Reliability of LLM-Based Hate Speech Detection
         </a></h3>
         <div class="paper-card__venue">
           Nehir Idil Yuksel, Daryna Dementieva, Alexander Fraser.
-          <em>5th Workshop on NLP for Positive Impact</em>
+          <em>Proceedings of the Fifth Workshop on NLP for Positive Impact (NLP4PI)</em>
         </div>
         <p class="paper-card__abstract">
           The first ever pipeline on how you can integrate uncertainty into automatic hate speech moderation. Can help to save resources and do additional moderation only for samples where a model is uncertain.
@@ -224,7 +188,7 @@
         </a></h3>
         <div class="paper-card__venue">
           Evgeniya Sukhodolskaya, Daryna Dementieva, Alexander Fraser.
-          <em>Preprint</em>
+          <em>KONVENS 2026</em>
         </div>
         <p class="paper-card__abstract">
           This paper introduces a scalable crowdsourcing pipeline for cross-lingual fake news detection, along with CrossNews-UA, 
@@ -241,13 +205,13 @@
       </article>
 
       <article class="paper-card" data-tags="machine-translation,benchmark,llm">
-        <div class="paper-card__year">Preprint</div>
+        <div class="paper-card__year">Preprint 2026</div>
         <h3><a href="https://arxiv.org/abs/2609.04173" target="_blank" rel="noopener">
           Last Translation Benchmark
         </a></h3>
         <div class="paper-card__venue">
-          Vilém Zouhar, Niyati Bafna, Mukund Choudhary, Maike Züfle, Sara Rajaee, ..., Daryna Dementieva ... (±100 authors)
-          <em>arXiv</em>
+          Vilém Zouhar, Niyati Bafna, Mukund Choudhary, Maike Züfle, Sara Rajaee, …, Daryna Dementieva, … (±100 authors).
+          <em>arXiv preprint arXiv:2609.04173</em>
         </div>
         <p class="paper-card__abstract">
           Participated in the massive multilingual benchmark that aims to stress-test models in machine translation task with a new, way more difficult tasks. Contributed with Ukrainian-English and Ukrainian-German pairs about Ukrainian proverbs and sayings.
@@ -266,6 +230,7 @@
         </a></h3>
         <div class="paper-card__venue">
           Andrii Dikhtiar, Antonii Viter, Bohdan Karaziia, Daryna Dementieva, Alexander Fraser.
+          <em>Proceedings of the 20th International Workshop on Semantic Evaluation (SemEval-2026)</em>
         </div>
         <p class="paper-card__abstract">
           Our TUM-NLP team solution on humor generation task.
@@ -282,8 +247,8 @@
           Self-Explaining Hate Speech Detection with Moral Rationales
         </a></h3>
         <div class="paper-card__venue">
-          Francielle Vargas, Jackson Trager, Diego Alves, Surendrabikram Thapa, Matteo Guida, Berk Atil, Daryna Dementieva, Andrew Smart, Ameeta Agrawal.
-          <em>Preprint</em>
+          Francielle Vargas, Jackson Trager, Diego Alves, Matteo Guida, Surendrabikram Thapa, Berk Atıl, Daryna Dementieva, Andrew Smart, Ameeta Agrawal.
+          <em>Findings of the Association for Computational Linguistics: ACL 2026</em>
         </div>
         <p class="paper-card__abstract">
           This paper introduces SMRA (Supervised Moral Rationale Attention), a hate speech detection framework that moves beyond surface-level lexical patterns by grounding model attention in moral reasoning.
@@ -338,7 +303,7 @@
 
       <article class="paper-card" data-tags="explainability,evaluation,benchmark">
         <div class="paper-card__year">LREC 2026</div>
-        <h3><a href="https://aclanthology.org/volumes/2026.lrec-1/" target="_blank" rel="noopener">
+        <h3><a href="https://arxiv.org/abs/2603.21174" target="_blank" rel="noopener">
           Explainable Semantic Textual Similarity via Dissimilar Span Detection
         </a></h3>
         <div class="paper-card__venue">
@@ -357,8 +322,8 @@
 
       <article class="paper-card" data-tags="NLP4SG,position">
         <div class="paper-card__year">EACL 2026</div>
-        <h3><a href="https://arxiv.org/abs/2505.22327" target="_blank" rel="noopener">
-          NLP for Social Good: A Survey of Challenges, Opportunities, and Responsible Deployment
+        <h3><a href="https://aclanthology.org/2026.eacl-long.238/" target="_blank" rel="noopener">
+          NLP for Social Good: A Survey and Outlook of Challenges, Opportunities and Responsible Deployment
         </a></h3>
         <div class="paper-card__venue">
           Antonia Karamolegkou, Angana Borah,...,Alexander Fraser, Zhijing Jin, Rada Mihalcea, Joel R Tetreault, Daryna Dementieva. (33 authors)
@@ -392,6 +357,24 @@
           <span class="paper-tag">multilingual</span>
         </div>
       </article>
+
+      <article class="paper-card" data-tags="text-detoxification,evaluation,multilingual,benchmark">
+        <div class="paper-card__year">LREC 2026</div>
+        <h3>
+          Evaluating Text Style Transfer: A Nine-Language Benchmark for Text Detoxification
+        </h3>
+        <div class="paper-card__venue">
+          Vitaly Protasov, Nikolay Babakov, Daryna Dementieva, Alexander Panchenko.
+          <em>Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">evaluation</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">benchmark</span>
+        </div>
+      </article>
+
 
       <!-- ══════ 2025 ══════ -->
 
@@ -527,7 +510,7 @@
           HatePRISM: Policies, Platforms, and Research Integration. Advancing NLP for Hate Speech Proactive Mitigation
         </a></h3>
         <div class="paper-card__venue">
-          Naquee Rizwan, Seid Muhie Yimam, Daryna Dementieva, et al.
+          Naquee Rizwan, Seid Muhie Yimam, Daryna Dementieva, F. Skupin, T. Fischer, Daniil Moskovskiy, et al.
           <em>Findings of the Association for Computational Linguistics: ACL 2025</em>
         </div>
         <p class="paper-card__abstract">
@@ -570,7 +553,7 @@
           Multilingual and Explainable Text Detoxification with Parallel Corpora
         </a></h3>
         <div class="paper-card__venue">
-          Daryna Dementieva, Nikolay Babakov, et al.
+          Daryna Dementieva, Nikolay Babakov, Amit Ronen, Abinew Ali Ayele, Naquee Rizwan, Florian Schneider, Xintong Wang, Seid Muhie Yimam, Daniil Moskovskiy, Elisei Stakovskii, Eran Kaufman, Ashraf Elnagar, Animesh Mukherjee, Alexander Panchenko.
           <em>Proceedings of the 31st International Conference on Computational Linguistics</em>
         </div>
         <p class="paper-card__abstract">
@@ -632,6 +615,52 @@
         </div>
       </article>
 
+      <article class="paper-card" data-tags="llm,evaluation">
+        <div class="paper-card__year">Preprint 2025</div>
+        <h3><a href="https://arxiv.org/abs/2506.22623" target="_blank" rel="noopener">
+          Temperature Matters: Enhancing Watermark Robustness Against Paraphrasing Attacks
+        </a></h3>
+        <div class="paper-card__venue">
+          B. Youbi Idrissi, M. Millunzi, A. Sorrenti, L. Baraldi, Daryna Dementieva.
+          <em>arXiv preprint arXiv:2506.22623</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">llm</span>
+          <span class="paper-tag">evaluation</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="shared-task,text-detoxification">
+        <div class="paper-card__year">CLEF 2025</div>
+        <h3>
+          Overview of PAN 2025: Voight-Kampff Generative AI Detection, Multilingual Text Detoxification, Multi-author Writing Style Analysis, and Generative Plagiarism Detection
+        </h3>
+        <div class="paper-card__venue">
+          J. Bevendorff, Daryna Dementieva, M. Fröbe, B. Gipp, A. Greiner-Petter, et al.
+          <em>International Conference of the Cross-Language Evaluation Forum for European Languages (CLEF 2025)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">shared-task</span>
+          <span class="paper-tag">text-detoxification</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="shared-task,text-detoxification">
+        <div class="paper-card__year">ECIR 2025</div>
+        <h3>
+          Overview of PAN 2025: Generative AI Detection, Multilingual Text Detoxification, Multi-author Writing Style Analysis, and Generative Plagiarism Detection
+        </h3>
+        <div class="paper-card__venue">
+          J. Bevendorff, Daryna Dementieva, M. Fröbe, B. Gipp, A. Greiner-Petter, et al.
+          <em>European Conference on Information Retrieval (ECIR 2025)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">shared-task</span>
+          <span class="paper-tag">text-detoxification</span>
+        </div>
+      </article>
+
+
       <!-- ══════ 2024 ══════ -->
 
       <article class="paper-card" data-tags="multilingual,text-detoxification,shared-task,hate-speech,benchmark">
@@ -640,7 +669,7 @@
           Overview of the Multilingual Text Detoxification Task at PAN 2024
         </a></h3>
         <div class="paper-card__venue">
-          Daryna Dementieva, Daniil Moskovskiy, Nikolay Babakov, et al.
+          Daryna Dementieva, Daniil Moskovskiy, Nikolay Babakov, Abinew Ali Ayele, Naquee Rizwan, et al.
           <em>Working Notes of CLEF 2024</em>
         </div>
         <p class="paper-card__abstract">
@@ -722,6 +751,53 @@
         </div>
       </article>
 
+      <article class="paper-card" data-tags="shared-task,text-detoxification">
+        <div class="paper-card__year">CLEF 2024</div>
+        <h3>
+          Overview of PAN 2024: Multi-author Writing Style Analysis, Multilingual Text Detoxification, Oppositional Thinking Analysis, and Generative AI Authorship Verification (Condensed Lab Overview)
+        </h3>
+        <div class="paper-card__venue">
+          Abinew Ali Ayele, Nikolay Babakov, J. Bevendorff, X. B. Casals, B. Chulvi, Daryna Dementieva, et al.
+          <em>International Conference of the Cross-Language Evaluation Forum for European Languages (CLEF 2024)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">shared-task</span>
+          <span class="paper-tag">text-detoxification</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="shared-task,text-detoxification">
+        <div class="paper-card__year">ECIR 2024</div>
+        <h3>
+          Overview of PAN 2024: Multi-author Writing Style Analysis, Multilingual Text Detoxification, Oppositional Thinking Analysis, and Generative AI Authorship Verification
+        </h3>
+        <div class="paper-card__venue">
+          J. Bevendorff, X. B. Casals, B. Chulvi, Daryna Dementieva, Ashraf Elnagar, D. Freitag, et al.
+          <em>European Conference on Information Retrieval (ECIR 2024)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">shared-task</span>
+          <span class="paper-tag">text-detoxification</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="hate-speech,counter-speech,text-detoxification">
+        <div class="paper-card__year">Preprint 2024</div>
+        <h3><a href="https://arxiv.org/abs/2406.19543" target="_blank" rel="noopener">
+          Demarked: A Strategy for Enhanced Abusive Speech Moderation through Counterspeech, Detoxification, and Message Management
+        </a></h3>
+        <div class="paper-card__venue">
+          Seid Muhie Yimam, Daryna Dementieva, T. Fischer, Daniil Moskovskiy, Naquee Rizwan, P. Saha, et al.
+          <em>arXiv preprint arXiv:2406.19543</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">counter-speech</span>
+          <span class="paper-tag">text-detoxification</span>
+        </div>
+      </article>
+
+
       <!-- ══════ 2023 ══════ -->
 
       <article class="paper-card" data-tags="NLP4SG,position,🏆">
@@ -730,7 +806,7 @@
           ChatGPT for good? On opportunities and challenges of large language models for education
         </a></h3>
         <div class="paper-card__venue">
-          Enkelejda Kasneci, Kathrin Seßler, Stefan Küchemann, Maria Bannert, Daryna Dementieva, et al.
+          Enkelejda Kasneci, Kathrin Seßler, Stefan Küchemann, Maria Bannert, Daryna Dementieva, F. Fischer, et al.
           <em>Learning and Individual Differences</em>
         </div>
         <p class="paper-card__abstract">
@@ -790,7 +866,7 @@
           Multiverse: Multilingual Evidence for Fake News Detection
         </a></h3>
         <div class="paper-card__venue">
-          Daryna Dementieva, M. Kuimov, Alexander Panchenko.
+          Daryna Dementieva, Mikhail Kuimov, Alexander Panchenko.
           <em>Journal of Imaging, MDPI</em>
         </div>
         <p class="paper-card__abstract">
@@ -871,6 +947,24 @@
         </div>
       </article>
 
+      <article class="paper-card" data-tags="fake-news,llm,benchmark,classification">
+        <div class="paper-card__year">Information 2023</div>
+        <h3><a href="https://www.mdpi.com/2078-2489/14/10/522" target="_blank" rel="noopener">
+          A Benchmark Dataset to Distinguish Human-Written and Machine-Generated Scientific Papers
+        </a></h3>
+        <div class="paper-card__venue">
+          M. H. I. Abdalla, S. Malberg, Daryna Dementieva, Edoardo Mosca, Georg Groh.
+          <em>Information 14 (10), 522, MDPI</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">fake-news</span>
+          <span class="paper-tag">llm</span>
+          <span class="paper-tag">benchmark</span>
+          <span class="paper-tag">classification</span>
+        </div>
+      </article>
+
+
       <!-- ══════ 2022 ══════ -->
 
       <article class="paper-card" data-tags="text-detoxification,dataset-creation,hate-speech,benchmark">
@@ -881,7 +975,7 @@
           </a>
         </h3>
         <div class="paper-card__venue">
-          Varvara Logacheva*, Daryna Dementieva* (equal contribution), et al.
+          Varvara Logacheva*, Daryna Dementieva*, Sergey Ustyantsev, Daniil Moskovskiy, David Dale, Irina Krotova, Nikita Semenov, Alexander Panchenko. (*equal contribution)
           <em>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1)</em>
         </div>
         <p class="paper-card__abstract">
@@ -942,6 +1036,37 @@
         </div>
       </article>
 
+      <article class="paper-card" data-tags="multilingual,cross-lingual">
+        <div class="paper-card__year">SemEval @ NAACL 2022</div>
+        <h3><a href="https://aclanthology.org/2022.semeval-1.160/" target="_blank" rel="noopener">
+          SkoltechNLP at SemEval-2022 Task 8: Multilingual News Article Similarity via Exploration of News Texts to Vector Representations
+        </a></h3>
+        <div class="paper-card__venue">
+          Mikhail Kuimov, Daryna Dementieva, Alexander Panchenko.
+          <em>Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">cross-lingual</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="text-detoxification,evaluation">
+        <div class="paper-card__year">HumEval @ ACL 2022</div>
+        <h3>
+          A Study on Manual and Automatic Evaluation for Text Style Transfer: The Case of Detoxification
+        </h3>
+        <div class="paper-card__venue">
+          Varvara Logacheva*, Daryna Dementieva*, Irina Krotova, Alena Fenogenova, Irina Nikishina, et al. (*equal contribution)
+          <em>Proceedings of the 2nd Workshop on Human Evaluation of NLP Systems (HumEval)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">evaluation</span>
+        </div>
+      </article>
+
+
       <!-- ══════ 2021 ══════ -->
 
       <article class="paper-card" data-tags="fake-news,multilingual,cross-lingual">
@@ -973,7 +1098,7 @@
           Methods for Detoxification of Texts for the Russian Language
         </a></h3>
         <div class="paper-card__venue">
-          Daryna Dementieva, Daniil Moskovskiy, Varvara Logacheva, David Dale, et al.
+          Daryna Dementieva, Daniil Moskovskiy, Varvara Logacheva, David Dale, Olga Kozlova, Nikita Semenov, Alexander Panchenko.
           <em>Multimodal Technologies and Interaction, 5(9), MDPI</em>
         </div>
         <p class="paper-card__abstract">
@@ -988,6 +1113,69 @@
           <span class="paper-tag">hate-speech</span>
         </div>
       </article>
+
+      <article class="paper-card" data-tags="text-detoxification,text-style-transfer">
+        <div class="paper-card__year">EMNLP 2021</div>
+        <h3><a href="https://aclanthology.org/2021.emnlp-main.629/" target="_blank" rel="noopener">
+          Text Detoxification using Large Pre-trained Neural Models
+        </a></h3>
+        <div class="paper-card__venue">
+          David Dale, Anton Voronov, Daryna Dementieva, Varvara Logacheva, Olga Kozlova, Nikita Semenov, Alexander Panchenko.
+          <em>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">text-style-transfer</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="text-detoxification,dataset-creation">
+        <div class="paper-card__year">Crowd Science @ VLDB 2021</div>
+        <h3>
+          Crowdsourcing of Parallel Corpora: the Case of Style Transfer for Detoxification
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Sergey Ustyantsev, David Dale, Olga Kozlova, Nikita Semenov, et al.
+          <em>Proceedings of the 2nd Crowd Science Workshop: Trust, Ethics, and Excellence in Crowdsourced Data Management at Scale</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">text-detoxification</span>
+          <span class="paper-tag">dataset-creation</span>
+        </div>
+      </article>
+
+
+      <article class="paper-card" data-tags="fake-news,shared-task">
+        <div class="paper-card__year">SemEval @ COLING 2020</div>
+        <h3>
+          SkoltechNLP at SemEval-2020 Task 11: Exploring Unsupervised Text Augmentation for Propaganda Detection
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, I. Markov, Alexander Panchenko.
+          <em>Proceedings of the Fourteenth Workshop on Semantic Evaluation</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">fake-news</span>
+          <span class="paper-tag">shared-task</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="fake-news,multilingual,cross-lingual">
+        <div class="paper-card__year">IEEE DSAA 2020</div>
+        <h3>
+          Fake News Detection using Multilingual Evidence
+        </h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Alexander Panchenko.
+          <em>2020 IEEE 7th International Conference on Data Science and Advanced Analytics (DSAA)</em>
+        </div>
+        <div class="paper-card__tags">
+          <span class="paper-tag">fake-news</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">cross-lingual</span>
+        </div>
+      </article>
+
 
     </div><!-- /papers-list -->
   </main>
@@ -1036,27 +1224,33 @@
         btn.className = 'filter-tag';
         btn.textContent = tag;
         btn.dataset.tag = tag;
-        btn.addEventListener('click', () => toggle(tag, btn));
+        btn.addEventListener('click', () => toggle(tag));
         container.appendChild(btn);
       });
 
-      function toggle(tag, btn) {
-        if (activeTag === tag) {
-          // Clear filter
-          activeTag = null;
-          document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
-          cards.forEach(c => c.classList.remove('hidden'));
-        } else {
-          activeTag = tag;
-          document.querySelectorAll('.filter-tag').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          cards.forEach(c => {
-            const tags = c.dataset.tags.split(',').map(t => t.trim());
-            c.classList.toggle('hidden', !tags.includes(tag));
-          });
-        }
+      // One function for both the filter buttons and the keyword chips in the intro.
+      function toggle(tag) {
+        activeTag = (activeTag === tag) ? null : tag;
+        document.querySelectorAll('.filter-tag').forEach(b => b.classList.toggle('active', b.dataset.tag === activeTag));
+        document.querySelectorAll('.kw-chip').forEach(c => c.classList.toggle('kw-active', c.dataset.kw === activeTag));
+        cards.forEach(c => {
+          const tags = c.dataset.tags.split(',').map(t => t.trim());
+          c.classList.toggle('hidden', activeTag !== null && !tags.includes(activeTag));
+        });
         updateDividers();
       }
+
+      // Keyword chips in the intro text: filter, then bring the filters + results into view
+      document.querySelectorAll('.kw-chip').forEach(chip => {
+        chip.setAttribute('role', 'button');
+        chip.setAttribute('tabindex', '0');
+        const go = () => {
+          toggle(chip.dataset.kw);
+          container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+        chip.addEventListener('click', go);
+        chip.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+      });
     })();
   </script>
 
