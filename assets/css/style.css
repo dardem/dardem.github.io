@@ -249,7 +249,7 @@ strong, b { font-weight: 600; }
 .hero {
   background: var(--dark);
   color: var(--on-dark);
-  padding: 3.75rem 2rem 0;
+  padding: 1.75rem 2rem 0;
 }
 
 .hero__inner {
@@ -313,7 +313,7 @@ strong, b { font-weight: 600; }
   position: sticky;
   bottom: 0;
   z-index: 5;
-  margin: 3.5rem -2rem 0;
+  margin: 1.75rem -2rem 0;
   padding: 0.85rem 2rem;
   background: rgba(17,17,17,0.94);
   backdrop-filter: blur(8px);
@@ -359,29 +359,29 @@ strong, b { font-weight: 600; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--cognac-lt);
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .hero h1 {
   font-family: var(--font-head);
   font-weight: 400;
-  font-size: clamp(2.4rem, 4.8vw, 3.9rem);
+  font-size: clamp(2.4rem, 4.8vw, 3.5rem);
   line-height: 1.04;
   letter-spacing: -0.02em;
   color: var(--on-dark);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
 }
 .hero h1 em { font-style: normal; color: var(--stone); }
 
 .hero__bio {
-  font-size: 1.02rem;
+  font-size: 0.98rem;
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.6;
   color: var(--on-dark-soft);
-  max-width: 60ch;
+  max-width: 72ch;
 }
 .hero__bio strong { color: var(--on-dark); font-weight: 500; }
-.hero__bio p + p { margin-top: 0.9rem; }
+.hero__bio p + p { margin-top: 0.55rem; }
 .hero__bio a {
   color: var(--on-dark);
   text-decoration: underline;
@@ -395,7 +395,7 @@ strong, b { font-weight: 600; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 1.75rem 0 2rem;
+  margin: 1.2rem 0 1.3rem;
 }
 .hero__keyword-chip {
   font-family: var(--font-mono);
@@ -1162,7 +1162,7 @@ strong, b { font-weight: 600; }
 /* E-mail, written out to keep it away from spam bots */
 .email { font-family: var(--font-mono); font-size: 0.92em; letter-spacing: 0.01em; white-space: nowrap; }
 .hero__contact {
-  margin-top: 1.4rem;
+  margin-top: 1rem;
   display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
   font-size: 0.85rem; color: var(--on-dark-soft);
 }
@@ -1210,6 +1210,22 @@ strong, b { font-weight: 600; }
 }
 
 /* ── Responsive ────────────────────────────── */
+/* Laptop screens: keep the whole hero (bio, links, contact) visible without scrolling */
+@media (min-width: 961px) and (max-height: 900px) {
+  .hero { padding-top: 1.25rem; }
+  .hero h1 { font-size: 3rem; margin-bottom: 0.9rem; }
+  .hero__bio { line-height: 1.55; }
+  .hero__keywords { margin: 1rem 0 1.1rem; }
+  .hero__jump { margin-top: 1.25rem; }
+}
+@media (min-width: 961px) and (max-height: 800px) {
+  .hero__title { margin-bottom: 0.5rem; }
+  .hero h1 { font-size: 2.6rem; margin-bottom: 0.75rem; }
+  .hero__bio { font-size: 0.93rem; }
+  .hero__keyword-chip { padding: 0.28rem 0.75rem; }
+  .hero__link { padding: 0.55rem 1.1rem; }
+  .hero__contact { margin-top: 0.8rem; }
+}
 @media (max-width: 960px) {
   .hero__inner { grid-template-columns: 1fr; gap: 3rem; }
   .hero__media { justify-self: center; max-width: 380px; }
