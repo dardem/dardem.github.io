@@ -74,22 +74,23 @@
     </style>
    
     <p class="papers-intro">
-      My research spans Responsible AI and NLP, with a focus on making language technologies
-      more transparent, equitable, and socially impactful. Core themes include
-      <span class="kw-chip" data-kw="explainability">explainability</span>
+      My research spans Responsible AI and NLP topics. Firstly, already for several years,
+      I am applying Language Technologies to socially critical domains — various harmful information mitigation, including
+      <span class="kw-chip" data-kw="hate-speech">hate-speech</span>,
+      <span class="kw-chip" data-kw="sexism-mitigation">sexism</span>,
+      and
+      <span class="kw-chip" data-kw="fake-news">fake-news</span>.
+      Other core themes are
+      <span class="kw-chip" data-kw="explainability">explainability</span> and transparency
       of model decisions, efficient
       <span class="kw-chip" data-kw="cross-lingual">cross-lingual</span>
       knowledge transfer, and building inclusive
       <span class="kw-chip" data-kw="multilingual">multilingual</span>
-      datasets and systems. I apply these to socially critical domains — including
-      <span class="kw-chip" data-kw="hate-speech">hate-speech</span>,
-      <span class="kw-chip" data-kw="sexism-mitigation">sexism</span>,
-      and
-      <span class="kw-chip" data-kw="fake-news">fake-news</span>
-      detection. Most recently, I focus on rigorous
+      datasets and systems.  Most recently, I focus on rigorous
       <span class="kw-chip" data-kw="evaluation">evaluation</span>
-      of <span class="kw-chip" data-kw="llm">LLMs</span>, including their
-      <span class="kw-chip" data-kw="reasoning">reasoning</span> beyond high-resource languages. Beyond methodology, I contribute
+      of <span class="kw-chip" data-kw="llm">LLMs</span> and their
+      <span class="kw-chip" data-kw="reasoning">reasoning</span> capabilities.
+      Beyond methodology, I contribute
       <span class="kw-chip" data-kw="position">position</span>
       papers and organise
       <span class="kw-chip" data-kw="shared-task">shared-task</span>
@@ -158,6 +159,26 @@
       -->
 
       <!-- ══════ 2026 ══════ -->
+      <article class="paper-card" data-tags="llm,evaluation,low-resource">
+        <article class="paper-card" data-tags="hate-speech,llm,text-detoxification">
+        <div class="paper-card__year">WMT @ EMNLP 2026</div>
+        <h3><a href="https://aclanthology.org/2026.emnlp-main.1643/" target="_blank" rel="noopener">
+          Findings of the WMT 2026 Shared Task: Multitask LLMs with Limited Resources
+        </a></h3>
+        <div class="paper-card__venue">
+          Shu Okabe, Marion Weller-Di Marco, Kathy Hämmerl, Daryna Dementieva, Lukas Edman, Marko Měškank, Anita Hendrichowa, Alexander Fraser.
+          <em>Proceedings of the Eleventh Conference on Machine Translation</em>
+        </div>
+        <p class="paper-card__abstract">
+          Our LLMs with Limited Resources 2026 Shared Task report.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">llm</span>
+          <span class="paper-tag">evaluation</span>
+          <span class="paper-tag">low-resource</span>
+        </div>
+      </article>
+      
       <article class="paper-card" data-tags="hate-speech,llm,text-detoxification">
         <div class="paper-card__year">EMNLP 2026</div>
         <h3><a href="https://aclanthology.org/2026.emnlp-main.1643/" target="_blank" rel="noopener">
@@ -168,7 +189,7 @@
           <em>Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing</em>
         </div>
         <p class="paper-card__abstract">
-          Instruction-tuned LLMs for harmful content mitigation: moving from task-specific models towards models that generalise robustly across harmful content tasks.
+          Research Queation: Can we tune an LLM on ALL hate speech datasets? Yes, you can and it helps a lot. This work introduces instruction-tuned LLMs for harmful content mitigation: moving from task-specific models towards models that generalise robustly across harmful content tasks.
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">hate-speech</span>
@@ -177,84 +198,86 @@
         </div>
       </article>
 
-      <article class="paper-card" data-tags="evaluation,reasoning,multilingual,low-resource,llm">
-        <div class="paper-card__year">Preprint 2026</div>
-        <h3><a href="https://arxiv.org/abs/2607.05992" target="_blank" rel="noopener">
-          PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages
+      <article class="paper-card" data-tags="hate-speech,llm,uncertainty">
+        <div class="paper-card__year">NLP4PI @ EMNLP 2026</div>
+        <h3><a href="https://aclanthology.org/2026.emnlp-main.1643/" target="_blank" rel="noopener">
+          Uncertainty Quantification to Improve the Reliability of LLM-Based Hate Speech Detection
         </a></h3>
         <div class="paper-card__venue">
-          Kathy Hämmerl, Daryna Dementieva, Nikolay Babakov, Ilseyar Alimova, Shu Okabe, Miras Baisbay, Lukas Edman, Jindřich Libovický, Abrorkhon Inomkhujaev, Volkan Özer, Nikola Selic, Antonia Karamolegkou, Mateusz Lango, Subhankar Swain, Galit Bary Weisberg, Alexander Fraser, Tsedeniya Kinfe Temesgen.
-          <em>arXiv preprint</em>
+          Nehir Idil Yuksel, Daryna Dementieva, Alexander Fraser.
+          <em>5th Workshop on NLP for Positive Impact</em>
         </div>
         <p class="paper-card__abstract">
-          A benchmark that extends the evaluation of mathematical reasoning in LLMs beyond high-resource languages.
-        </p>
-        <div class="paper-card__tags">
-          <span class="paper-tag">evaluation</span>
-          <span class="paper-tag">reasoning</span>
-          <span class="paper-tag">multilingual</span>
-          <span class="paper-tag">low-resource</span>
-          <span class="paper-tag">llm</span>
-        </div>
-      </article>
-
-      <article class="paper-card" data-tags="hate-speech,llm">
-        <div class="paper-card__year">LREC 2026</div>
-        <h3><a href="https://aclanthology.org/2026.lrec-1.1/" target="_blank" rel="noopener">
-          Beyond Generic Responses: Target-Aware Strategies for Countering Hate Speech
-        </a></h3>
-        <div class="paper-card__venue">
-          Yen-Yu Chang, Daryna Dementieva, Alexander Fraser.
-          <em>Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)</em>
-        </div>
-        <p class="paper-card__abstract">
-          Moving counter-speech generation beyond generic replies: strategies that take the target of the hate speech into account.
+          The first ever pipeline on how you can integrate uncertainty into automatic hate speech moderation. Can help to save resources and do additional moderation only for samples where a model is uncertain.
         </p>
         <div class="paper-card__tags">
           <span class="paper-tag">hate-speech</span>
           <span class="paper-tag">llm</span>
+          <span class="paper-tag">uncertainty</span>
         </div>
       </article>
 
-      <article class="paper-card" data-tags="explainability,evaluation">
-        <div class="paper-card__year">LREC 2026</div>
-        <h3><a href="https://aclanthology.org/volumes/2026.lrec-1/" target="_blank" rel="noopener">
-          Explainable Semantic Textual Similarity via Dissimilar Span Detection
+      <article class="paper-card" data-tags="low-resource,ukrainian,dataset-creation,explainability,cross-lingual,benchmark">
+        <div class="paper-card__year">KONVENS 2026</div>
+        <h3><a href="https://www.korpuslab.uni-hamburg.de/en/konvens2026/114.pdf" target="_blank" rel="noopener">
+          CrossNews-UA: A Cross-lingual News Semantic Similarity Benchmark for Ukrainian, Polish, Russian, and English
         </a></h3>
         <div class="paper-card__venue">
-          Diego Miguel Lozano, Daryna Dementieva, Alexander Fraser.
-          <em>Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)</em>
+          Evgeniya Sukhodolskaya, Daryna Dementieva, Alexander Fraser.
+          <em>Preprint</em>
         </div>
         <p class="paper-card__abstract">
-          More in-depth, explainable evaluation of semantic textual similarity by detecting the spans in which two texts differ.
+          This paper introduces a scalable crowdsourcing pipeline for cross-lingual fake news detection, along with CrossNews-UA, 
+          a new dataset pairing Ukrainian news with Polish, Russian, and English sources annotated for semantic similarity using a structured 4W framework.
         </p>
         <div class="paper-card__tags">
+          <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">ukrainian</span>
+          <span class="paper-tag">dataset-creation</span>
           <span class="paper-tag">explainability</span>
-          <span class="paper-tag">evaluation</span>
+          <span class="paper-tag">cross-lingual</span>
+          <span class="paper-tag">benchmark</span>
         </div>
       </article>
 
-      <article class="paper-card" data-tags="NLP4SG,position">
-        <div class="paper-card__year">EACL 2026</div>
-        <h3><a href="https://arxiv.org/abs/2505.22327" target="_blank" rel="noopener">
-          NLP for Social Good: A Survey of Challenges, Opportunities, and Responsible Deployment
+      <article class="paper-card" data-tags="machine-translation,benchmark,llm">
+        <div class="paper-card__year">Preprint</div>
+        <h3><a href="https://arxiv.org/abs/2609.04173" target="_blank" rel="noopener">
+          Last Translation Benchmark
         </a></h3>
         <div class="paper-card__venue">
-          Antonia Karamolegkou, Angana Borah,...,Alexander Fraser, Zhijing Jin, Rada Mihalcea, Joel R Tetreault, Daryna Dementieva.
-          <em>Proceedings of The 19th Conference of the European Chapter of the Association for Computational Linguistics</em>
+          Vilém Zouhar, Niyati Bafna, Mukund Choudhary, Maike Züfle, Sara Rajaee, ..., Daryna Dementieva ... (±100 authors)
+          <em>arXiv</em>
         </div>
         <p class="paper-card__abstract">
-          Our massive position paper and survey of application opportunities of
-          modern language technologies for social positive impact.
+          Participated in the massive multilingual benchmark that aims to stress-test models in machine translation task with a new, way more difficult tasks. Contributed with Ukrainian-English and Ukrainian-German pairs about Ukrainian proverbs and sayings.
         </p>
         <div class="paper-card__tags">
-          <span class="paper-tag">NLP4SG</span>
-          <span class="paper-tag">position</span>
+          <span class="paper-tag">machine-translation</span>
+          <span class="paper-tag">benchmark</span>
+          <span class="paper-tag">llm</span>
         </div>
       </article>
-      
+
+      <article class="paper-card" data-tags="llm,humor">
+        <div class="paper-card__year">SemEval @ ACL 2026</div>
+        <h3><a href="https://aclanthology.org/2026.semeval-1.295/" target="_blank" rel="noopener">
+          abateam at SemEval-2026 Task 1: Plan2joke–Humor Policies for Type-Specific Two-Pass Humor Generation
+        </a></h3>
+        <div class="paper-card__venue">
+          Andrii Dikhtiar, Antonii Viter, Bohdan Karaziia, Daryna Dementieva, Alexander Fraser.
+        </div>
+        <p class="paper-card__abstract">
+          Our TUM-NLP team solution on humor generation task.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">llm</span>
+          <span class="paper-tag">humor</span>
+        </div>
+      </article>
+
       <article class="paper-card" data-tags="hate-speech,explainability">
-        <div class="paper-card__year">Preprint 2026</div>
+        <div class="paper-card__year">ACL Findings 2026</div>
         <h3><a href="https://arxiv.org/abs/2601.03481" target="_blank" rel="noopener">
           Self-Explaining Hate Speech Detection with Moral Rationales
         </a></h3>
@@ -269,6 +292,85 @@
         <div class="paper-card__tags">
           <span class="paper-tag">hate-speech</span>
           <span class="paper-tag">explainability</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="evaluation,reasoning,multilingual,low-resource,llm,benchmark">
+        <div class="paper-card__year">Preprint 2026</div>
+        <h3><a href="https://arxiv.org/abs/2607.05992" target="_blank" rel="noopener">
+          PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages
+        </a></h3>
+        <div class="paper-card__venue">
+          Daryna Dementieva, Nikolay Babakov, Kathy Hämmerl, Ilseyar Alimova, Jindřich Libovický, Shu Okabe, Miras Baisbay, Lukas Edman, Abrorkhon Inomkhujaev, Antonia Karamolegkou, Mateusz Lango, Volkan Özer, Nikola Selic, Subhankar Swain, Tsedeniya Kinfe Temesgen, Galit Bary Weisberg, Alexander Fraser.
+          <em>arXiv preprint</em>
+        </div>
+        <p class="paper-card__abstract">
+          A benchmark that extends the evaluation of mathematical reasoning in LLMs beyond high-resource languages.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">evaluation</span>
+          <span class="paper-tag">reasoning</span>
+          <span class="paper-tag">multilingual</span>
+          <span class="paper-tag">low-resource</span>
+          <span class="paper-tag">llm</span>
+          <span class="paper-tag">benchmark</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="hate-speech,llm,counter-speech">
+        <div class="paper-card__year">LREC 2026</div>
+        <h3><a href="https://aclanthology.org/2026.lrec-1.1/" target="_blank" rel="noopener">
+          Beyond Generic Responses: Target-Aware Strategies for Countering Hate Speech
+        </a></h3>
+        <div class="paper-card__venue">
+          Yen-Yu Chang, Daryna Dementieva, Alexander Fraser.
+          <em>Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)</em>
+        </div>
+        <p class="paper-card__abstract">
+          Moving counter-speech generation beyond generic replies: strategies that take the target of the hate speech into account.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">llm</span>
+          <span class="paper-tag">counter-speech</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="explainability,evaluation,benchmark">
+        <div class="paper-card__year">LREC 2026</div>
+        <h3><a href="https://aclanthology.org/volumes/2026.lrec-1/" target="_blank" rel="noopener">
+          Explainable Semantic Textual Similarity via Dissimilar Span Detection
+        </a></h3>
+        <div class="paper-card__venue">
+          Diego Miguel Lozano, Daryna Dementieva, Alexander Fraser.
+          <em>Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)</em>
+        </div>
+        <p class="paper-card__abstract">
+          More in-depth, explainable evaluation of semantic textual similarity by detecting the spans in which two texts differ.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">explainability</span>
+          <span class="paper-tag">evaluation</span>
+          <span class="paper-tag">benchmark</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="NLP4SG,position">
+        <div class="paper-card__year">EACL 2026</div>
+        <h3><a href="https://arxiv.org/abs/2505.22327" target="_blank" rel="noopener">
+          NLP for Social Good: A Survey of Challenges, Opportunities, and Responsible Deployment
+        </a></h3>
+        <div class="paper-card__venue">
+          Antonia Karamolegkou, Angana Borah,...,Alexander Fraser, Zhijing Jin, Rada Mihalcea, Joel R Tetreault, Daryna Dementieva. (33 authors)
+          <em>Proceedings of The 19th Conference of the European Chapter of the Association for Computational Linguistics</em>
+        </div>
+        <p class="paper-card__abstract">
+          Our massive position paper and survey of application opportunities of
+          modern language technologies for social positive impact.
+        </p>
+        <div class="paper-card__tags">
+          <span class="paper-tag">NLP4SG</span>
+          <span class="paper-tag">position</span>
         </div>
       </article>
 
@@ -288,28 +390,6 @@
         <div class="paper-card__tags">
           <span class="paper-tag">low-resource</span>
           <span class="paper-tag">multilingual</span>
-        </div>
-      </article>
-
-      <article class="paper-card" data-tags="low-resource,ukrainian,dataset-creation,explainability,cross-lingual">
-        <div class="paper-card__year">Preprint 2026</div>
-        <h3><a href="https://arxiv.org/abs/2510.19628" target="_blank" rel="noopener">
-          CrossNews-UA: A Cross-lingual News Semantic Similarity Benchmark for Ukrainian, Polish, Russian, and English
-        </a></h3>
-        <div class="paper-card__venue">
-          Daryna Dementieva, Evgeniya Sukhodolskaya, Alexander Fraser.
-          <em>Preprint</em>
-        </div>
-        <p class="paper-card__abstract">
-          This paper introduces a scalable crowdsourcing pipeline for cross-lingual fake news detection, along with CrossNews-UA, 
-          a new dataset pairing Ukrainian news with Polish, Russian, and English sources annotated for semantic similarity using a structured 4W framework.
-        </p>
-        <div class="paper-card__tags">
-          <span class="paper-tag">low-resource</span>
-          <span class="paper-tag">ukrainian</span>
-          <span class="paper-tag">dataset-creation</span>
-          <span class="paper-tag">explainability</span>
-          <span class="paper-tag">cross-lingual</span>
         </div>
       </article>
 
@@ -336,7 +416,7 @@
         </div>
       </article>
 
-      <article class="paper-card" data-tags="low-resource,ukrainian,classification,emotion-recognition,cross-lingual">
+      <article class="paper-card" data-tags="low-resource,ukrainian,classification,emotion-recognition,cross-lingual,benchmark">
         <div class="paper-card__year">EMNLP 2025</div>
         <h3><a href="https://aclanthology.org/2025.findings-emnlp.107/" target="_blank" rel="noopener">
           EmoBench‑UA: A Benchmark Dataset for Emotion Detection in Ukrainian
@@ -354,6 +434,7 @@
           <span class="paper-tag">classification</span>
           <span class="paper-tag">emotion-recognition</span>
           <span class="paper-tag">cross-lingual</span>
+          <span class="paper-tag">benchmark</span>
         </div>
       </article>
 
@@ -461,7 +542,7 @@
         </div>
       </article>
 
-      <article class="paper-card" data-tags="multilingual,emotion-recognition,🏆">
+      <article class="paper-card" data-tags="multilingual,emotion-recognition,benchmark,🏆">
         <div class="paper-card__year">ACL 2025</div>
         <h3><a href="https://aclanthology.org/2025.acl-long.436/" target="_blank" rel="noopener">
           BRIGHTER: BRIdging the Gap in Human-Annotated Textual Emotion Recognition Datasets for 28 Languages
@@ -478,6 +559,7 @@
         <div class="paper-card__tags">
           <span class="paper-tag">multilingual</span>
           <span class="paper-tag">emotion-recognition</span>
+          <span class="paper-tag">benchmark</span>
           <span class="paper-tag">🏆</span>
         </div>
       </article>
@@ -528,7 +610,7 @@
         </div>
       </article>
 
-      <article class="paper-card" data-tags="multilingual,text-detoxification,shared-task,hate-speech">
+      <article class="paper-card" data-tags="multilingual,text-detoxification,shared-task,hate-speech,benchmark">
         <div class="paper-card__year">CLEF 2025</div>
         <h3><a href="https://iris.unibocconi.it/bitstream/11565/4079002/1/paper_278.pdf" target="_blank" rel="noopener">
           Overview of the Multilingual Text Detoxification Task at PAN 2025
@@ -546,12 +628,13 @@
           <span class="paper-tag">text-detoxification</span>
           <span class="paper-tag">shared-task</span>
           <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">benchmark</span>
         </div>
       </article>
 
       <!-- ══════ 2024 ══════ -->
 
-      <article class="paper-card" data-tags="multilingual,text-detoxification,shared-task,hate-speech">
+      <article class="paper-card" data-tags="multilingual,text-detoxification,shared-task,hate-speech,benchmark">
         <div class="paper-card__year">CLEF 2024</div>
         <h3><a href="https://ceur-ws.org/Vol-3740/paper-223.pdf" target="_blank" rel="noopener">
           Overview of the Multilingual Text Detoxification Task at PAN 2024
@@ -570,10 +653,11 @@
           <span class="paper-tag">text-detoxification</span>
           <span class="paper-tag">shared-task</span>
           <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">benchmark</span>
         </div>
       </article>
 
-      <article class="paper-card" data-tags="fake-news,multilingual,classification">
+      <article class="paper-card" data-tags="fake-news,multilingual,classification,benchmark">
         <div class="paper-card__year">NLP4PI @ EMNLP 2024</div>
         <h3>
           <a href="https://aclanthology.org/2024.nlp4pi-1.25/" target="_blank" rel="noopener">
@@ -593,6 +677,7 @@
           <span class="paper-tag">fake-news</span>
           <span class="paper-tag">multilingual</span>
           <span class="paper-tag">classification</span>
+          <span class="paper-tag">benchmark</span>
         </div>
       </article>
 
@@ -788,7 +873,7 @@
 
       <!-- ══════ 2022 ══════ -->
 
-      <article class="paper-card" data-tags="text-detoxification,dataset-creation,hate-speech">
+      <article class="paper-card" data-tags="text-detoxification,dataset-creation,hate-speech,benchmark">
         <div class="paper-card__year">ACL 2022</div>
         <h3>
           <a href="https://aclanthology.org/2022.acl-long.469/" target="_blank" rel="noopener">
@@ -808,6 +893,7 @@
           <span class="paper-tag">text-detoxification</span>
           <span class="paper-tag">dataset-creation</span>
           <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">benchmark</span>
         </div>
       </article>
 
@@ -834,7 +920,7 @@
         </div>
       </article>
 
-      <article class="paper-card" data-tags="text-detoxification,shared-task,hate-speech">
+      <article class="paper-card" data-tags="text-detoxification,shared-task,hate-speech,benchmark">
         <div class="paper-card__year">DIALOGUE 2022</div>
         <h3>
           <a href="https://dialogue-conf.org/media/5755/dementievadplusetal105.pdf" target="_blank" rel="noopener">
@@ -852,6 +938,7 @@
           <span class="paper-tag">text-detoxification</span>
           <span class="paper-tag">shared-task</span>
           <span class="paper-tag">hate-speech</span>
+          <span class="paper-tag">benchmark</span>
         </div>
       </article>
 
